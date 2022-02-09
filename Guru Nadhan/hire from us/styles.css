@@ -1,0 +1,1057 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  background-color: #f4f4f9;
+  min-height: 8.5vh;
+  padding: 0 7vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.5vh;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 8vw;
+}
+.hero-img {
+  height: 10vh;
+}
+.hero-title {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+.nav-links {
+  display: flex;
+  min-width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links > li {
+  list-style: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.nav-links > li a {
+  text-decoration: none;
+  color: #1070e5;
+}
+.underline-effect {
+  position: relative;
+}
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1070e5;
+  transition: width 0.25s ease-out;
+}
+.underline-effect:hover::before {
+  width: 100%;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Banner */
+.hero-banner {
+  background-color: #1070e5;
+  min-height: 91.5vh;
+  display: flex;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero-banner > img {
+  height: 40vh;
+  margin-bottom: 12vh;
+}
+.banner-text-content {
+  margin-left: 5vw;
+  color: white;
+  height: 40vh;
+  margin-bottom: 12vh;
+}
+.banner-text-content > h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 5vh;
+}
+.banner-text-content > p {
+  margin-bottom: 3vh;
+}
+
+/* form and info */
+.form-and-info {
+  /* width: 90vw; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5vw;
+}
+
+/* -----------------INFO------------------------ */
+.hire-us-div {
+  position: relative;
+  top: -10vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 5px;
+  width: 30vw;
+  margin-left: 4vw;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: warp;
+  padding: 4vh;
+  padding-bottom: 5vh;
+}
+.hire-us-div > h2 {
+  width: 100%;
+  text-align: center;
+  /* background-color: white; */
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+.hire-us-card {
+  position: relative;
+  width: min-content;
+  height: 19.3vh;
+  background-color: white;
+  margin-top: 7vh;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); */
+  border: 1px solid #1070e5;
+
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.hire-us-div .hire-us-card .hire-us-image {
+  position: relative;
+  /* width: 15vw; */
+  background-color: white;
+
+  border: 1px solid #1070e5;
+  border-radius: 10px;
+  font-size: 6rem;
+  color: #1070e5;
+  padding: 0vh 2vw;
+
+  /* height: 20vh; */
+  top: -40%;
+  left: 0.1vw;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hire-us-div .hire-us-card .hire-us-image p {
+  /* max-width: 100%; */
+  width: 7vw;
+  text-align: center;
+  /* border-radius: 15px; */
+}
+
+.hire-us-content {
+  position: relative;
+  top: -18vh;
+  padding: 10px 15px;
+  color: black;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  font-size: 0.8rem;
+}
+.hire-us-content h3 {
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+}
+.hire-us-content p {
+  text-align: justify;
+}
+.card-height-increase {
+  height: 40vh;
+}
+.card-content-animation {
+  margin-top: 5vh;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+/* ---------------------------- FORM ------------------------------*/
+.form-div {
+  width: 44vw;
+  padding: 4vh 2vw;
+  position: relative;
+  top: -10vh;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 5px;
+}
+.form-div > h2 {
+  width: 100%;
+  text-align: center;
+  color: #1070e5;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 4vh;
+}
+.form-div label {
+  padding-left: 0.5vw;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.form-div input {
+  display: block;
+  width: 100%;
+  padding-left: 1vw;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 9px;
+  border: 3px solid #f4f4f9;
+  margin: 1.5vh 0vw;
+}
+#form-submit-btn {
+  margin-top: 5vh;
+  background-color: #1070e5;
+  color: white;
+  border: 0px solid black;
+}
+
+/*---------------------- Job Roles ------------------------*/
+.job-roles > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #1070e5;
+  margin-bottom: 4vh;
+}
+.table-container {
+  width: 85vw;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+.left {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.jobs {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 3vh 3vw;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: background-color 220ms ease-out;
+  transition: color 220ms ease-out;
+}
+.active {
+  background-color: #1070e5;
+  color: #f4f4f9;
+}
+.right {
+  width: 60vw;
+  padding-left: 3vw;
+}
+.job-roles-content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2vh;
+  column-gap: 2vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.job-roles-content > div {
+  text-transform: capitalize;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 1vh 1vw;
+  font-size: 1.1rem;
+  background-color: rgba(66, 153, 225, 0.2);
+}
+
+/*--------------------------------------Hiring partners-------------------------*/
+
+.hiring-partners > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.05rem;
+  text-transform: uppercase;
+  color: #1070e5;
+  margin-top: 4vh;
+}
+.partners {
+  height: 250px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  overflow-x: hidden;
+
+  width: calc(250 * 8);
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 55px;
+  perspective: 100px;
+}
+
+img {
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 4));
+  }
+}
+
+/* ------------------------review------------------------- */
+.reviews > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #1070e5;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+.reviews-container {
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reviews-text {
+  width: 30vw;
+  border-right: 0.8rem solid #1070e5;
+}
+.reviews-text > p {
+  height: 30vh;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+.reviews-card {
+  width: 59vw;
+}
+.card-container {
+  background-color: #f4f4f9;
+  border-radius: 9px;
+  height: 30vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* border-radius: 18px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  padding: 2vh 2vw;
+}
+.card-img-content {
+  display: flex;
+  flex-direction: column;
+}
+.card-info-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-container {
+  width: min-content;
+  height: min-content;
+  margin-bottom: 2vh;
+}
+.review-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+.review-name {
+  font-size: 19px;
+  color: #192a51;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.review-title {
+  width: 12vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #1070e5;
+  font-weight: 500;
+}
+.review-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #1b4965;
+  font-family: "Abel", sans-serif;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 13px 7px;
+  color: #1070e5;
+  transition: color 250ms ease-in-out;
+  width: fit-content;
+}
+.btns:hover {
+  color: rgba(25, 42, 81, 0.6);
+}
+/*---------------------------------footer----------------------------*/
+
+.bg-dark {
+  margin-top: 19vh;
+  width: 100%;
+  background-color: #21325b !important;
+}
+.whole-footer-container {
+  margin: 0 10vw;
+  padding: 4rem 0 0 !important;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", sans-serif;
+}
+.footer-container {
+  display: flex;
+  font-size: 0.875rem;
+
+  justify-content: space-between;
+}
+.footer-container h5 {
+  font-size: 21px;
+  color: white;
+  font-weight: 300;
+}
+.address-heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.ftr-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.phone-heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+.footer-container li {
+  list-style: none;
+  margin: 14px 0;
+}
+
+hr {
+  margin-top: 30px;
+  border-top: 1px solid;
+  opacity: 0.5;
+  border-top-color: rgb(231, 234, 243);
+}
+.footer_image {
+  margin-top: 2.5rem;
+  margin-left: -10px;
+  width: 175px;
+}
+
+.btn55 {
+  padding: 0.5rem 1.285rem;
+  font-size: 1.2rem;
+  margin-top: -15px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(16, 112, 229);
+  color: #fff;
+  margin-bottom: -10px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.btn55:hover {
+  color: #21325b;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  color: rgba(231, 234, 243, 0.5);
+  cursor: default;
+}
+
+/* ---------------------------------------------media queries------------------------------------- */
+/*
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;  */
+@media (max-width: 1265px) {
+  .hero-banner {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .hero-banner > img {
+    height: 37vh;
+    margin-bottom: 12vh;
+  }
+  .hero-banner p {
+    font-size: 17px;
+  }
+
+  .banner-text-content {
+    margin-left: 2vw;
+    color: white;
+    height: 50vh;
+    margin-bottom: 12vh;
+  }
+  .banner-text-content > h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 5vh;
+  }
+  .hire-us-div > h2 {
+    font-size: 1.8rem;
+  }
+  .form-div > h2 {
+    font-size: 1.8rem;
+  }
+  /* hire-us */
+  .hire-us-div {
+    width: 40vw;
+    padding-bottom: 1vh;
+  }
+  .hire-us-card {
+    width: 19vw;
+  }
+
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 5.5rem;
+  }
+
+  .hire-us-div .hire-us-card .hire-us-image p {
+    width: 7vw;
+    text-align: center;
+  }
+
+  .hire-us-content {
+    top: -15vh;
+    font-size: 0.7rem;
+  }
+  .card-height-increase {
+    height: 35vh;
+  }
+  .card-content-animation {
+    margin-top: 5vh;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+
+  /* FORM */
+  .form-div label {
+    font-size: 0.9rem;
+  }
+  .form-div input {
+    height: 2.8rem;
+    font-size: 0.9rem;
+  }
+  /* Job Roles */
+  .job-roles > h2 {
+    font-size: 1.8rem;
+  }
+  .jobs {
+    font-size: 1rem;
+  }
+  .job-roles-content > div {
+    font-size: 1rem;
+  }
+
+  .hiring-partners > h2 {
+    font-size: 1.8rem;
+  }
+  .reviews > h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1158px) {
+  .hire-us-div > h2 {
+    font-size: 1.5rem;
+  }
+  .form-div > h2 {
+    font-size: 1.5rem;
+  }
+
+  .reviews > h2 {
+    font-size: 1.8rem;
+  }
+  .reviews-text > p {
+    font-size: 1.8rem;
+  }
+  .img-container {
+    width: min-content;
+    height: min-content;
+    margin-bottom: 1vh;
+  }
+  .review-name {
+    font-size: 18px;
+    margin-bottom: 1vh;
+  }
+  .review-title {
+    width: 13vw;
+    font-size: 16px;
+  }
+  .review-info {
+    font-size: 16px;
+    margin-bottom: 2vh;
+  }
+}
+@media (max-width: 1012px) {
+  .hero-banner > img {
+    width: 35vw;
+    height: auto;
+    margin-bottom: 17vh;
+  }
+  .banner-text-content {
+    margin-left: 1vw;
+    height: 50vh;
+    margin-bottom: 12vh;
+  }
+  .banner-text-content > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5vh;
+  }
+
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 4rem;
+    width: 15vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image p {
+    text-align: center;
+    width: 100%;
+  }
+  .hire-us-content {
+    font-size: 0.7rem;
+  }
+
+  .review-name {
+    font-size: 16px;
+  }
+  .review-title {
+    font-size: 14px;
+  }
+  .review-info {
+    font-size: 14px;
+  }
+}
+@media (max-width: 910px) {
+  .navbar {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .nav-links {
+    min-width: 50vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 4rem;
+    width: 15vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image p {
+    text-align: center;
+    width: 100%;
+  }
+  .hire-us-card {
+    height: 15vh;
+    width: 25vw;
+  }
+  .card-height-increase {
+    height: 30vh;
+  }
+  .form-div label {
+    font-size: 0.8rem;
+  }
+  .form-div input {
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin: 1.1vh 0vw;
+  }
+  .jobs {
+    font-size: 0.8rem;
+  }
+  .job-roles-content > div {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 790px) {
+  .hero-img {
+    height: 8vh;
+  }
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  .nav-links li {
+    font-size: 1rem;
+  }
+  .hero-banner {
+    flex-direction: column;
+  }
+  .hero-banner > img {
+    height: 30vh;
+    width: auto;
+    margin-bottom: 2vh;
+  }
+  .banner-text-content > h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5vh;
+  }
+  .form-and-info {
+    gap: 2vw;
+  }
+  .hire-us-div {
+    width: 40vw;
+    margin-left: -1vw;
+  }
+  .form-div {
+    width: 54vw;
+    overflow-x: hidden;
+  }
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 4rem;
+    width: 15vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image p {
+    text-align: center;
+    width: 100%;
+  }
+  .job-roles {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .table-container {
+    margin-right: 0vw;
+    width: 99vw;
+  }
+  .left {
+    width: 28vw;
+  }
+  .right {
+    width: 70vw;
+  }
+  .reviews-text {
+    display: none;
+  }
+  .reviews-card {
+    width: 90vw;
+  }
+  .review-title {
+    width: 25vw;
+  }
+  .main-content {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 580px) {
+  .navbar {
+    height: 7vh;
+    min-height: 7vh;
+  }
+  .hero-img {
+    height: 8vh;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .nav-links li {
+    font-size: 0.9rem;
+  }
+  .hire-us-div > h2 {
+    font-size: 1.2rem;
+  }
+  .banner-text-content > h1 {
+    font-size: 1.4rem;
+  }
+  .hero-banner > img {
+    height: 25vh;
+  }
+  .banner-text-content > p {
+    font-size: 0.9rem;
+  }
+  .form-div > h2 {
+    font-size: 1.2rem;
+  }
+  .review-image {
+    height: 80px;
+    width: 80px;
+  }
+  .hire-us-content {
+    top: -15vh;
+    font-size: 0.5rem;
+  }
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 3.5rem;
+  }
+  .form-div input {
+    height: 2.4rem;
+  }
+  .job-roles > h2 {
+    font-size: 1.2rem;
+  }
+  .jobs {
+    font-size: 0.6rem;
+  }
+  .job-roles-content > div {
+    font-size: 0.6rem;
+  }
+  .hiring-partners > h2 {
+    font-size: 1.4rem;
+  }
+  .reviews > h2 {
+    font-size: 1.3rem;
+  }
+
+  .review-name {
+    font-size: 13px;
+    width: 22vw;
+  }
+  .review-title {
+    font-size: 12px;
+  }
+  .review-info {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .nav-links {
+    width: 60vw;
+  }
+  .nav-links li {
+    font-size: 0.7rem;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-title {
+    margin-left: 0;
+  }
+  .navbar {
+    min-height: 2vh;
+    max-height: 6vh;
+  }
+  .nav-container {
+    padding-top: 1vh;
+    height: 5vh;
+  }
+  .hero-banner > img {
+    height: auto;
+    width: 60vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image {
+    font-size: 3rem;
+  }
+  .hire-us-div > h2 {
+    font-size: 1rem;
+  }
+  .job-roles > h2 {
+    font-size: 1rem;
+  }
+  .hire-us-card {
+    height: 12vh;
+    width: 25vw;
+  }
+  .hire-us-div .hire-us-card .hire-us-image {
+    top: -50%;
+  }
+  .jobs {
+    font-size: 0.5rem;
+  }
+  .job-roles-content > div {
+    font-size: 0.5rem;
+  }
+  .card-height-increase {
+    height: 30vh;
+  }
+  .form-div label {
+    font-size: 0.7rem;
+  }
+  .form-div input {
+    height: 1.8rem;
+    font-size: 0.6rem;
+    margin: 0.91vh 0vw;
+  }
+
+  .banner-text-content {
+    height: 60vh;
+    margin-bottom: 3vh;
+  }
+  .form-div > h2 {
+    font-size: 1rem;
+  }
+  .reviews-container {
+    height: max-content;
+  }
+  .reviews-card {
+    height: max-content;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+  }
+  .card-img-content {
+    align-items: center;
+    width: 80vw;
+  }
+  .review-image {
+    height: 70px;
+    width: 70px;
+  }
+  .review-name {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+  }
+  .review-title {
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    margin-bottom: 3vh;
+  }
+  .review-info {
+    font-size: 12px;
+  }
+  .job-roles {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .table-container {
+    margin-right: 0vw;
+    width: 99vw;
+  }
+  .left {
+    width: 28vw;
+  }
+  .right {
+    width: 70vw;
+  }
+  .job-roles-content {
+    row-gap: 1vh;
+    column-gap: 1vw;
+  }
+  .job-roles-content > div {
+    text-transform: capitalize;
+    margin: 0.7rem;
+    padding: 1vh 1vw;
+  }
+}
+@media (max-width: 340px) {
+  .hero-title {
+    font-size: 1rem;
+  }
+  .nav-links li {
+    font-size: 0.6rem;
+  }
+  .nav-links {
+    min-width: 40vw;
+    max-width: 70vw;
+  }
+}
+@media (max-width: 300px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img-content {
+    width: 80vw;
+    align-items: center;
+  }
+  .review-image {
+    height: 65px;
+    width: 65px;
+  }
+  .review-name {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1vh;
+  }
+  .review-title {
+    font-size: 9px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+  .review-info {
+    font-size: 10px;
+  }
+}

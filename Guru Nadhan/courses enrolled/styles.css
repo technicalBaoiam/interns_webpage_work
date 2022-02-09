@@ -1,0 +1,690 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  background-color: #f4f4f9;
+  min-height: 9vh;
+  padding: 0 7vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 8vw;
+}
+.hero-img {
+  height: 10vh;
+}
+.hero-title {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+.nav-links {
+  display: flex;
+  min-width: 35vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links > li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.nav-links > li a {
+  text-decoration: none;
+  color: #1070e5;
+}
+.underline-effect {
+  position: relative;
+}
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1070e5;
+  transition: width 0.25s ease-out;
+}
+.underline-effect:hover::before {
+  width: 100%;
+}
+
+/*---------------------- Main contents ----------------------*/
+
+/*---------------- hero banner -----------------------------*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.contents {
+  width: 100%;
+}
+.hero-banner {
+  background-color: #1070e5;
+  min-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero-banner-container {
+  color: #f4f4f9;
+  padding-top: 5vh;
+  width: 70vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+.hero-banner-container > p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+.first-line {
+  margin-bottom: 4vh;
+}
+.first-line a {
+  color: white;
+}
+.hero-banner-title {
+  width: 50vw;
+  text-align: left;
+  margin-left: 0;
+  line-height: 110%;
+  font-size: 3.2rem;
+  margin-bottom: 5vh;
+}
+.hero-banner-text {
+  margin-top: 5vh;
+  padding-bottom: 4vh;
+  width: 70vw;
+  z-index: 2;
+}
+.hero-banner-container > img {
+  position: absolute;
+  right: 10vw;
+  top: 9vh;
+  z-index: 1;
+  height: 50vh;
+  width: 50vh;
+}
+
+/* ----------------courses enrolled----------------------------- */
+.courses-enrolled {
+  padding-top: 4vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f4f4f9;
+}
+.courses-enrolled-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+  color: #1070e5;
+}
+.courses-enrolled-container {
+  padding-top: 5vh;
+  width: 82vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.row {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 12vh;
+}
+.card-container {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  transition: transform 0.2s ease-out;
+}
+.card-container:hover {
+  transform: scaleX(1.03) scaleY(1.03);
+}
+.card-images {
+  width: 100%;
+  height: 22vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-container h1 {
+  text-transform: uppercase;
+  margin-top: 1vh;
+  color: #1070e5;
+  font-size: 20px;
+}
+.card-container p {
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 2vh;
+  padding: 0vh 2vw;
+}
+.card-footer {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  padding: 0vh 2vw;
+  margin-top: 2vh;
+}
+.card-footer-end {
+  margin-top: 0.8vh;
+  margin-bottom: 2vh;
+  justify-content: space-around;
+}
+.card-footer div {
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  color: #1070e5;
+}
+.card-footer-end div {
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.resume-btn-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f9;
+}
+.resume-btn {
+  width: 100%;
+  padding: 5px 0vw;
+  font-size: 19px;
+  height: max-content;
+  background-color: rgb(11, 199, 95);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.2s ease-out;
+}
+.resume-btn:hover {
+  background-color: rgba(11, 199, 95, 0.8);
+}
+
+/* -------------------------All courses -----------------------*/
+.all-courses {
+  padding-top: 4vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f4f4f9;
+}
+.all-courses-container {
+  padding-top: 5vh;
+  width: 82vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.all-courses-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+  color: #1070e5;
+}
+
+.enroll-btn {
+  width: 100%;
+  padding: 1vh 0vw;
+  font-size: 19px;
+  height: max-content;
+  background-color: rgb(16, 112, 229);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.2s ease-out;
+}
+.enroll-btn:hover {
+  background-color: rgba(16, 112, 229, 0.85);
+}
+/* ----------------------Why Choose Us----------------- */
+
+.benefits {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f4f4f9;
+}
+.benefits-container {
+  padding-top: 5vh;
+  width: 82vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.benefits-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 8vh;
+  color: #1070e5;
+}
+.benefits-elem {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits-elem > img {
+  width: 150px;
+}
+.benefits-elem > div {
+  margin-left: 2vw;
+  height: 20vh;
+  line-height: 2;
+  font-size: 15px;
+  text-align: justify;
+}
+.benefits-elem-title {
+  text-align: center;
+  margin-right: 2vw;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+
+/* -------------------------------footer-------------------------- */
+
+.bg-dark {
+  background-color: #21325b !important;
+}
+.whole-footer-container {
+  margin: 0 10vw;
+  padding: 4rem 0 0 !important;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", sans-serif;
+}
+.footer-container {
+  display: flex;
+  font-size: 0.875rem;
+
+  justify-content: space-between;
+}
+.footer-container h5 {
+  font-size: 21px;
+  color: white;
+  font-weight: 300;
+}
+.address-heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.ftr-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.phone-heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+.footer-container li {
+  list-style: none;
+  margin: 14px 0;
+}
+
+hr {
+  margin-top: 30px;
+  border-top: 1px solid;
+  opacity: 0.5;
+  border-top-color: rgb(231, 234, 243);
+}
+.footer_image {
+  margin-top: 2.5rem;
+  margin-left: -10px;
+  width: 175px;
+}
+
+.btn55 {
+  padding: 0.5rem 1.285rem;
+  font-size: 1.2rem;
+  margin-top: -15px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(16, 112, 229);
+  color: #fff;
+  margin-bottom: -10px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.btn55:hover {
+  color: #21325b;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  color: rgba(231, 234, 243, 0.5);
+  cursor: default;
+}
+/*
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;  */
+
+@media (max-width: 1360px) {
+  .hero-banner-container > img {
+    right: 1vw;
+    top: 9vh;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-banner-container > img {
+    top: 9vh;
+    right: 0;
+    height: 300px;
+    width: 300px;
+  }
+  .hero-banner-title {
+    font-size: 3rem;
+  }
+  .card-container {
+    width: 24vw;
+    margin-top: 5vh;
+  }
+  .card-container h1 {
+    font-size: 18px;
+  }
+  .card-container p {
+    font-size: 12px;
+  }
+
+  .benefits-elem {
+    width: 45vw;
+  }
+  .benefits-elem > div {
+    margin-left: 0vw;
+    font-size: 13px;
+  }
+  .benefits-elem > img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    min-width: 52vw;
+  }
+  .nav-links > li {
+    font-size: 1rem;
+  }
+  .hero-banner-container > img {
+    top: 9vh;
+    right: 5vw;
+    height: 250px;
+    width: 250px;
+  }
+  .hero-banner-title {
+    font-size: 2.4rem;
+  }
+  .hero-banner-container > p {
+    font-size: 1rem;
+  }
+  .courses-enrolled-title {
+    font-size: 1.8rem;
+  }
+  .all-courses-title {
+    font-size: 1.8rem;
+  }
+  .benefits-title {
+    font-size: 1.8rem;
+  }
+  .card-container {
+    width: 26vw;
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-banner-container {
+    width: 90vw;
+  }
+  .row {
+    gap: 1rem;
+  }
+  .card-container {
+    width: 30vw;
+    margin-top: 5vh;
+  }
+  .benefits-elem {
+    width: 80vw;
+  }
+  .benefits .row {
+    gap: 7rem;
+    margin-bottom: 7rem;
+  }
+  .benefits-elem {
+    margin-right: 5rem;
+    align-items: flex-start;
+  }
+  .benefits-elem-title {
+    margin-bottom: 10px;
+  }
+  .benefits-elem > div {
+    margin-left: 1vw;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 710px) {
+  .navbar {
+    padding: 0 2vw;
+  }
+  .nav-links {
+    min-width: 60vw;
+  }
+  .hero-banner-container {
+    width: 90vw;
+  }
+  .hero-banner-container > img {
+    top: 10vh;
+    right: 0;
+    height: 250px;
+    width: 250px;
+  }
+  .hero-banner-title {
+    font-size: 2rem;
+  }
+  .row {
+    gap: 0rem;
+  }
+  .card-container {
+    width: 35vw;
+    margin-top: 5vh;
+  }
+  .benefits-container {
+    width: 100vw;
+  }
+  .benefits .row {
+    gap: 7rem;
+    margin-bottom: 7rem;
+  }
+  .benefits-elem {
+    width: 100vw;
+    margin-right: 0vw;
+  }
+}
+
+@media (max-width: 610px) {
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 7vw;
+  }
+  .hero-img {
+    height: 8vh;
+  }
+  .hero-title {
+    margin-right: 3vw;
+    font-size: 1.4rem;
+    margin-left: 0px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #1070e5;
+  }
+  .nav-links > li {
+    list-style: none;
+    font-size: 0.8rem;
+  }
+  .hero-banner-container > img {
+    top: 10vh;
+    right: 0;
+    height: 230px;
+    width: 230px;
+  }
+  .hero-banner-title {
+    font-size: 1.6rem;
+    margin-bottom: 8vh;
+  }
+  .hero-banner-container > p {
+    font-size: 0.9rem;
+  }
+  .card-container {
+    width: 40vw;
+    margin-top: 5vh;
+  }
+  .benefits-elem > div {
+    margin-left: 1vw;
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    display: none;
+  }
+  .navbar {
+    max-height: 6vh;
+  }
+  .nav-links {
+    min-width: 80vw;
+  }
+  .hero-banner-container > img {
+    top: 10vh;
+    right: 0;
+    height: 180px;
+    width: 180px;
+  }
+  .hero-banner-title {
+    font-size: 1.2rem;
+    margin-bottom: 7vh;
+  }
+  .hero-banner-container > p {
+    font-size: 0.8rem;
+  }
+  .courses-enrolled-title {
+    font-size: 1.4rem;
+  }
+  .all-courses-title {
+    font-size: 1.4rem;
+  }
+  .benefits-title {
+    margin-top: 2.8vh;
+    font-size: 1.4rem;
+  }
+  .card-container {
+    width: 60vw;
+    margin-top: 5vh;
+  }
+  .card-container h1 {
+    font-size: 16px;
+  }
+  .resume-btn {
+    font-size: 16px;
+  }
+  .enroll-btn {
+    font-size: 16px;
+  }
+  .benefits-elem > div {
+    margin-left: 1vw;
+    font-size: 11px;
+    text-align: center;
+  }
+  .benefits-elem {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 410px) {
+  .hero-banner-container > img {
+    display: none;
+  }
+  .hero-banner-title {
+    width: 80vw;
+  }
+  .nav-links > li {
+    list-style: none;
+    font-size: 0.6rem;
+  }
+  .card-container {
+    width: 80vw;
+  }
+  .courses-enrolled-title {
+    font-size: 1rem;
+  }
+  .all-courses-title {
+    font-size: 1rem;
+  }
+  .benefits-title {
+    margin-top: 5vh;
+    font-size: 1rem;
+  }
+}

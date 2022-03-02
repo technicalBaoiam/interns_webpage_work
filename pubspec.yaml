@@ -1,0 +1,65 @@
+name: BOAIAM
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+  flutter: ">=1.17.0"
+dependencies:
+  url_launcher: ^6.0.9
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  app_settings:
+  firebase_auth:
+  cloud_firestore: ^2.4.0
+  firebase_core :
+  admob_flutter: ^2.0.0
+  http: ^0.13.4
+  google_fonts: ^2.2.0
+  babstrap_settings_screen: ^0.1.1
+  image_picker: ^0.8.4+4
+  path_provider:
+  flutter_svg: ^1.0.3
+  carousel_slider: ^4.0.0
+  onboarding: ^2.1.0
+  provider: ^6.0.2
+  flutter_credit_card: ^3.0.1
+  font_awesome: ^5.10.1
+  font_awesome_flutter: ^9.2.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  intl: ^0.17.0
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+
+
+
+  fonts:
+    - family: Luxurious Roman Regular
+      fonts:
+        - asset: fonts/LuxuriousRoman-Regular.ttf
+    - family: Verdana
+      fonts:
+        - asset: fonts/Verdana.ttf
+

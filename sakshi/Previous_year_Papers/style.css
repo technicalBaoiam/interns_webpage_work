@@ -1,0 +1,393 @@
+:root {
+  --blue: #4a79e6;
+
+  --black: #111;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*---------------------------------navbar----------------------------*/
+.navbar {
+  background-color: #f4f4f9;
+  min-height: 9vh;
+  padding: 0 7vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 8vw;
+}
+.hero-img {
+  height: 10vh;
+}
+.hero-title {
+  margin-left: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1070e5;
+}
+.nav-links {
+  display: flex;
+  min-width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links > li {
+  list-style: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.nav-links > li a {
+  text-decoration: none;
+  color: #1070e5;
+}
+
+/*---------------------------------footer----------------------------*/
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: #21325b;
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.r-footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box a {
+  color: #fff;
+}
+
+.h-box {
+  /* column-count: 2; */
+  column-gap: 1.25em;
+}
+
+.b-footer {
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.l-footer p {
+  padding-right: 20%;
+  color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  .r-footer > * {
+    flex: 1;
+  }
+
+  .features {
+    flex-grow: 2;
+  }
+
+  .l-footer {
+    flex: 1 0px;
+  }
+
+  .r-footer {
+    flex: 2 0px;
+  }
+}
+
+/* -------------------------conatiner------------------------------ 1*/
+.container {
+  max-width: 1300;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 40px;
+
+  width: auto;
+  padding: 4vh 6vw;
+  top: 10vh;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col2 > img {
+  max-width: 100%;
+}
+.col2 h1 {
+  font-size: 45px;
+  line-height: 80px;
+  margin: 25px, 0;
+  padding-left: 50px;
+}
+.col2 ul {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 30px, 0;
+  padding-left: 50px;
+}
+/* -------------exam name section=-------------- */
+.exam_type_wrapper {
+  padding: 50px 100px;
+  width: auto;
+  background-color: rgb(196, 209, 248);
+  box-shadow: rgba(181, 177, 236, 0.1) 0px 8px 16px;
+  border-radius: 10px;
+}
+.info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin: auto;
+}
+
+.info-container .box {
+  padding: 1rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem; /*gap between icon and text */
+  /* border: 0.1rem solid #999; */
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.info-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #4a79e6;
+  color: #fff;
+  text-align: center;
+}
+
+.info-container .box h3 {
+  font-size: 1rem;
+  /* padding-bottom: .5rem; 
+  padding-right:0 ; */
+  color: #263238;
+}
+
+/* .info-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+} */
+
+.info-container .box:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+}
+
+/* --------------------exam paper ------------------ */
+.exam_papers_wrapper {
+  margin: auto;
+  padding: 100px 100px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 10px;
+}
+
+.heading {
+  /* margin-bottom: 0.2rem; */
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 0.5rem solid var(--blue);
+}
+.paper-row {
+  align-items: stretch;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: auto; /* Hide horizontal scrollbar */
+}
+.paper-row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  /*float: left;*/
+  max-width: 13rem;
+  min-width: 10rem;
+  padding: 1rem;
+  max-height: auto;
+  min-height: auto;
+  /* margin-bottom: 2rem; */
+  border: 1px solid ;
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 1rem 0 1rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+}
+.card h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+.card-text {
+  font-size: 85%;
+}
+.card > i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #4a79e6;
+  color: #fff;
+  text-align: center;
+}
+/* .card table {
+
+} */
+
+.card table td {
+  padding: 0.2rem;
+  margin: 10px 10px;
+}
+.card button {
+  cursor: pointer;
+  padding: 0.6rem 1.285rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #4a79e6;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ----------------FAQ Section  -------------------------*/
+.faq_wrapper {
+  margin: auto;
+  padding: 100px 100px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 10px;
+}
+.accordion {
+  background-color: rgb(176, 192, 240);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(201, 211, 241);
+}
+
+.accordion:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

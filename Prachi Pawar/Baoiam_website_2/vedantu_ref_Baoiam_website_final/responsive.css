@@ -1,0 +1,376 @@
+   /* Media queris */
+
+
+
+    /* ============ = home */
+    @media screen and (min-width:777px) and (max-width:900px) {
+
+        .home-content .home-img .img-bg1 {
+          width: 300px;
+        }
+  
+        .home-content .home-info h1 {
+          font-size: 4rem;
+        }
+      }
+  
+      @media screen and (max-width:777px) {
+        .home-content {
+          flex-direction: column;
+        }
+  
+        .home-img {
+          margin-bottom: 50px;
+        }
+  
+      }
+  
+  
+  
+  
+  
+      @media screen and (max-width:1055px) {
+        .form-container {
+          padding: 32px 16px;
+          text-align: center;
+          min-height: 650px;
+          display: block;
+          width: auto;
+          margin: 68px auto;
+        }
+  
+        .inp-container {
+          margin: auto;
+        }
+  
+        .form-head {
+          font-size: 34px;
+          max-width: 338px;
+          margin: 30px auto;
+          /* margin-top: auto; */
+          height: unset;
+        }
+  
+        .form-info {
+          margin: 8px auto auto;
+          font-size: 20px;
+          width: unset;
+        }
+  
+  
+        .mendatory-info {
+          margin-top: 21px;
+          margin-bottom: 12px;
+        }
+  
+        .input,
+        .input-email {
+          width: 328px;
+          font-size: 16px;
+          height: 44px;
+          margin-bottom: 10px;
+        }
+  
+        .input-info {
+          /* display: flex; */
+          justify-content: center;
+          display: unset;
+        }
+  
+        .mobile,
+        .class {
+          width: 328px;
+          margin-left: 0;
+        }
+  
+        .mob-no,
+        .class-select {
+          width: 339px;
+          font-size: 16px;
+          height: 44px;
+  
+        }
+      }
+  
+  
+  
+      @media screen and (max-width:1075px) {
+        .advantage-container {
+          width: calc(100% - 32px);
+        }
+  
+        .advantage-left {
+          min-height: unset;
+          /* min-width: 400px; */
+  
+        }
+  
+  
+        .advantage-right {
+          padding: 10px;
+          margin-right: 5px;
+        }
+  
+        .advantage-right img {
+          width: 270px;
+        }
+  
+      }
+  
+      @media (max-width: 981px) {
+        .advantage-container {
+          height: 520px;
+        }
+  
+        .advantage-left {
+          min-width: 500px;
+          margin: 0;
+          position: relative;
+          top: -78px;
+        }
+  
+        .advantage-left-wrapper {
+          flex: 0 0 32.333%;
+        }
+  
+        .book-a-demo {
+          margin: auto;
+          margin-top: 50px;
+        }
+      }
+  
+      @media (max-width: 851px) {
+        .advantage-container {
+          flex-direction: column;
+        }
+  
+        .advantage-right {
+          display: none;
+        }
+  
+        .advantage-left {
+          top: 0px;
+        }
+  
+      }
+  
+  
+      /* counter ====787 */
+  
+      @media (max-width: 785px) {
+        .counter-section .counter-container {
+          grid-template-columns: repeat(2, 1fr);
+          height: 327px;
+        }
+  
+        .counter-section .counter-container>div:nth-of-type(2) {
+          border-right: none;
+        }
+      }
+  
+      @media (max-width: 583px) {
+        .counter-section .counter-container {
+          height: 415px;
+          padding: 14px;
+        }
+  
+        .count {
+          font-size: 3.3rem;
+        }
+      }
+  
+  
+      /* -------Featured in */
+  
+      @media (max-width: 820px) {
+        .featured-images {
+          justify-content: flex-start;
+          padding: 0 18px;
+        }
+      }
+  
+  
+      /* banner */
+      /* 1160 */
+  
+      @media (max-width: 1160px) {
+        .banner-text {
+          margin-top: 50px;
+        }
+      }
+  
+      @media (max-width: 925px) {
+        .home-banner-section {
+          height: 370px;
+        }
+  
+        .banner-content {
+          flex-direction: column;
+          margin-left: 20px;
+        }
+  
+        .banner-demo {
+          margin-top: 50px;
+          /* margin-right: 113px; */
+          margin-right: auto;
+          margin-left: auto;
+        }
+  
+        .banner-container {
+          height: 360px;
+        }
+  
+        .banner-img {
+          margin-left: 20px;
+        }
+  
+        .banner-img img {
+          height: 325px;
+        }
+      }
+  
+      @media (max-width: 685px) {
+        .home-banner-section {
+          height: 500px;
+        }
+  
+        .banner-container {
+          flex-direction: column;
+          height: 460px;
+        }
+  
+        .banner-content {
+          margin: auto;
+        }
+  
+        .banner-img {
+          margin: auto;
+        }
+  
+        .banner-img img {
+          height: 160px;
+        }
+  
+        .banner-text {
+          /* margin-top: 0px; */
+          margin: 10px;
+        }
+  
+        .banner-demo {
+          margin-top: 10px;
+        }
+      }
+  
+  
+      @media screen and (max-width:527px) {
+        .home-content .home-img .img-bg1 {
+          width: 330px;
+          height: 340px;
+          margin: auto;
+        }
+  
+        .logo h3 {
+          display: none;
+        }
+  
+        .home-content .home-info h1 {
+          font-size: 4rem;
+        }
+  
+        .bookdemo-btn {
+          width: 280px;
+        }
+  
+        .inp-name,
+        .inp-email-id {
+          width: 270px;
+          height: 40px;
+        }
+  
+        .heading-line {
+          font-size: 3.2rem;
+        }
+  
+        .banner-text {
+          font-size: 28px;
+        }
+  
+        .form-container {
+          width: 400px;
+          /* height: 370px; */
+          /* border-radius: 16px;
+      background-color: #f6f6f6;
+      border: 2px solid gray;
+      align-items: center; */
+          margin: 0 auto;
+          padding: 50px 30px 50px;
+        }
+  
+        .form-head {
+          text-align: center;
+          margin-bottom: 1rem;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          width: 220px;
+        }
+  
+        .form-info {
+          margin: 8px auto auto;
+          font-size: 1.5rem;
+        }
+  
+  
+        .mob-no,
+        .class-select {
+          width: 270px;
+        }
+  
+        .form-submit {
+          width: 270px;
+          height: 50px;
+          font-size: 18px;
+          margin-left: 22px;
+        }
+  
+  
+        .adv-text {
+          margin: 50px;
+        }
+  
+        .advantage-left-wrapper {
+          flex: 0 0 98.333%;
+        }
+  
+        .advantage-container {
+          height: 900px;
+        }
+  
+        .book-a-demo {
+          margin-top: 15px;
+        }
+  
+        .count {
+          font-size: 3.2rem;
+        }
+      }
+  
+  
+      @media screen and (max-width:417px) {
+        .form-container {
+          width: 308px;
+        }
+  
+        .inp-container {
+          margin-left: -40px;
+        }
+  
+        .form-submit {
+          margin-left: 30px;
+        }
+  
+        .bookdemo-btn {
+          width: 240px;
+          margin-bottom: 20px;
+        }
+      }

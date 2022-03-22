@@ -1,0 +1,56 @@
+/* Responsive  */
+
+@media screen and (max-width:1350px){
+    
+   .content{
+       grid-template-columns: 1fr;
+       padding-top: 140px;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .box1{
+       flex-direction: row;
+       /* padding: 15px; */
+       min-height: 50vh;
+       margin-bottom: 35px;
+       margin-right: 10px;
+       /* margin-left: 30px; */
+   }
+
+   .chat-box{
+    right: 0;
+    margin-bottom: 45px;
+   }
+    
+}
+
+
+@media screen and (max-width:765px) {
+    .box1{
+        margin: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .que{
+        margin-bottom: 36px;
+    }
+
+    .how-to{
+        margin: auto;
+    }
+
+    .chat-box{
+        width: 410px;
+        margin: auto; 
+        margin-bottom: 40px;
+    }
+
+    .form-control{
+        width: 200px;
+        padding: 8px 4px;
+    }
+}
+
+

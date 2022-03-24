@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <!-- <link rel="stylesheet" href="style.css">    -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 900px)" href="phone1.css"> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+  
+*{ 
+    margin:0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}    
+body{ 
+    font-family: 'EB Garamond', serif; 
+} 
+h1 h2 h3 h4{ 
+    font-family: 'Signika Negative', sans-serif; 
+    color:orange;
+}
+header{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 2px 4px #000000;  
+    padding: 0px 15px;
+    /* width: 99.9vw; */ 
+    /* border-bottom: 2px solid; */
+} 
+#logo img{ 
+    height: 59px;
+    width: 73px;
+    margin-left: 10px;
+    margin-top: -3px;
+    margin-bottom: -4px;
+} 
+.navbar  ul { 
+    display: flex; 
+}   
+
+.navbar  ul li{ 
+    list-style: none;
+} 
+.navbar  ul li a{  
+    text-decoration: none;
+    color: rgb(255, 140, 8);  
+     padding: 4px 34px; 
+     font-size:1.3rem;
+    font-weight: 800;
+
+
+} 
+.navbar  ul a:hover{ 
+    background-color: rgb(255, 140, 8);  
+    color: rgb(255, 255, 255);
+
+} 
+.item2 img{ 
+    height:250px;
+}
+.container{ 
+ display: flex;
+ margin-top:30px; 
+ justify-content: space-between; 
+ text-align: center;
+} 
+.item1 { 
+ width: 70%;  
+}   
+.item1 h2{ 
+    font-size: 2.5rem;
+    margin: 26px 128px;
+    color: rgb(255, 140, 8);
+    margin-bottom: -5px;
+    margin-top: 17px;
+}  
+.cont{ 
+    width: 36vw;
+    margin: auto;
+}
+
+.btn{  
+    width:103px; 
+    height:30px;
+    /* margin-left: 391px;  */
+    cursor: pointer; 
+    margin-top: 28px; 
+    border-radius: 8px; 
+    background-color: rgb(255 255 255);
+    box-shadow: 1px 3px;
+    color: rgb(255, 140, 8);  
+    font-size: 1.1rem; 
+    font-weight: 750;
+}
+
+.btn:hover{ 
+    background-color: rgb(255, 140, 8);  
+    color:white; 
+   
+}
+.item2 img {  
+    border-radius: 21%;
+    width: 92%;
+} 
+
+
+/* Courses  available*/ 
+#courses-head{ 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 31px;
+
+}   
+.courses{ 
+    margin-left: 29px;
+}
+.trend{ 
+    text-align: center;
+    margin-bottom: -42px;
+    color: rgb(255, 140, 8);
+    font-size: 1.9rem;
+    margin: 15px 0px;  
+    margin-top: 50px;
+}
+.courses h2{ 
+    color:rgb(255, 140, 8);  
+    font-size: 1.9rem; 
+    margin-left: 6px; 
+    margin-bottom: 12px;
+} 
+.courses h3{  
+    margin-left: 22px;
+  background-color: rgb(255, 140, 8);   
+  width: 120px; 
+  text-align: center; 
+  border-radius: 8px;  
+  box-shadow: 2px 3px rgb(0, 0, 0); 
+  font-weight: 800;  
+  margin-bottom: 12px;
+
+} 
+.courses div{ 
+    display: flex;
+} 
+.courses div li{ 
+list-style: none;
+} 
+.courses div a{ 
+text-decoration: none; 
+padding: 4px 20px;   
+color: black;
+margin: 3px 25px; 
+font-weight: 750;
+
+border-radius: 3px; 
+/* background-color: rgb(255, 140, 8);   */
+box-shadow: 2px 3px rgb(7, 5, 5);
+}  
+
+.courses li a:hover{ 
+    background-color: rgb(255, 140, 8);  
+    color :white;
+}
+
+/* boxes */  
+.boxes {  
+    display: flex;
+    /* width: 70vw; */
+    /* overflow: scroll; */
+    margin: auto; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.box{ 
+    width: 20vw;
+    margin: 17px 20px;
+    box-shadow: 2px 2px 2px 2px #e1d9d9;
+    height: 310px;
+    /* margin-right: 41px;   */
+    text-align: center;  
+    border-radius: 18px;
+    background-color: #d9d9d940;
+}
+ 
+.box p{ 
+    text-align: center;
+}
+
+.box img{ 
+    height: 166px;
+    width: 180px;
+    padding: 11px 3px;
+    /* margin-left: 36px;   */
+    border-radius: 9px; 
+    /* margin-right: 34px;  */
+}
+.box button{ 
+    width: 119px;
+    height: 27px;
+    /* margin-left: 63px; */
+    box-shadow: 2px 2px rgb(202 202 204)
+    color: rgb(255, 140, 8);  
+    background-color: white;
+    border-radius: 10px;  
+    font-weight: 750; 
+    
+} 
+.box button:hover{ 
+    background-color: rgb(255, 140, 8);  
+    color:white; 
+}
+
+
+/* headline 1 */ 
+
+#headline{ 
+    margin-top: 9vh;
+}
+.mid-heading{
+      display: flex; 
+      background-color:rgb(255 165 0); 
+      height: 205px; 
+      align-items: center;
+}  
+.head_cont{ 
+    text-align: center; 
+    margin: auto;
+}
+.mid-heading img{
+    height: 211px;
+    width: 283px;
+}
+.mid-heading h2{    
+    font-size: 3rem;
+
+} 
+
+.mid-heading .midd{  
+ font-size: 1.9rem; 
+ MARGIN-TOP: 8PX;
+}
+.mid-heading .btn2 {
+    border-radius: 8px;
+    box-shadow: 2px 3px rgb(0 0 0);
+    background-color: white;
+    color: rgb(0 0 0);
+    font-size: 1.rem;
+    cursor: pointer;
+    font-weight: 760;
+    padding: 3px 10px;
+    margin-top: 13px;
+}
+.btn2:hover{ 
+    /* background-color:rgb(0, 0, 0);    */
+    color:rgb(255, 123, 0);
+} 
+
+/* headline-2 */ 
+#headline-2{ 
+    margin-top:95px;    
+} 
+#headline-2 h2{ 
+    text-align: center; 
+    font-size:2.8rem; 
+    color:rgb(255, 140, 8);   
+    margin-bottom: 5vh;
+}  
+.about{ 
+    display: flex;
+    margin: auto;  
+    flex-wrap: wrap;
+}
+
+.ab{ 
+    margin: auto;
+    box-shadow: rgb(202 202 204) 2px 2px 2px 2px;
+    height: 292px;
+    text-align: center;
+    width: 20.2vw; 
+    background-color: #d9d9d940;
+}
+
+
+.ab img{ 
+    height: 158px;
+    width: 16vw;
+    margin-top: 19px;
+} 
+.ab h3{
+    text-align: center; 
+    color:rgb(255, 140, 8);  
+} 
+
+/* opinion */
+#opinion{  
+    margin-top:10vh; 
+    background-color:rgb(255 165 0);  
+    height: 233px;
+
+}
+
+.opi-cont{
+    display: flex;
+    width: 75%;
+    margin: auto; 
+    
+
+}  
+.opi-cont img{ 
+    margin-left: -20px;
+    height: 182px;
+    border-radius: 116px;
+    width: 174px;
+    margin-top: 27px;
+  
+}
+.opi-cont div{ 
+    margin-top: 45px;
+    margin-left: 57px;
+    font-size: 1.3rem;
+}
+
+
+
+/* courses offered */
+#offered{ 
+    margin-top: 113px;
+    
+} 
+#offered h2{ 
+    text-align: center; 
+    font-size: 2.1rem; 
+    color:rgb(255, 140, 8);  
+} 
+.sec{ 
+    display: flex;
+  
+    margin-top: 33px;
+    justify-content: space-evenly;
+}
+.sec1{  
+    width: 35%;
+ }  
+.sec div{ 
+    margin: 12px -26px; 
+    font-weight: 800;
+
+} 
+.sec1 div{ 
+    font-size:1.3rem; 
+    color:rgb(255, 140, 8);  
+}
+.sec1 div p{ 
+    color:rgb(0, 0, 0);  
+    font-size:1.1rem; 
+    font-weight: 400;
+}
+
+
+/* featured by */ 
+#features{ 
+    margin-top: 120px;
+    margin-bottom: -25px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 140, 8); 
+}
+ 
+#features h2{ 
+    margin-bottom: 17px;
+}
+.small_logo img{   
+    margin-top:10px;
+     height: 103px;
+    margin: 31px 35px;
+}
+
+
+/* teaher */ 
+
+#teacher{  
+    margin-top: 110px;
+    display: flex; 
+    flex-direction: column;  
+    margin-bottom: 79px;
+}   
+#teacher h2{ 
+    text-align: center;
+    font-size: 2.3rem;
+    color:rgb(255, 140, 8);  
+    margin-bottom: 32px;
+}
+
+.teach{ 
+    display: flex;
+    justify-content: center;
+} 
+
+.teach1{ 
+    width: 20vw;
+    border: 1px solid #e5d5d5;
+    margin: 23px;  
+    text-align: center;
+    height: 258px; 
+    box-shadow: 3px 3px rgb(202 202 204);
+    background-color:  #d9d9d940;
+}
+
+.teach1 p{ 
+    text-align: center; 
+    font-size: 1.1rem; 
+    margin-top: 14px;
+
+}
+.teach img{ 
+  
+    height: 159px;
+    width: 171px;
+    margin-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */ 
+footer{ 
+    background-color: rgb(0, 0, 0);  
+    color: white;
+}
+#foot{
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+ 
+}
+.foots{ 
+    width: 20%;
+    margin: 49px 29px;
+}
+.reser{ 
+    text-align: center; 
+    height: 5vh; 
+    margin-top: 20px;
+} 
+#foot h4{ 
+    font-size: 1.4rem;
+}
+
+#foot p{  
+    font-size: 0.9rem;
+
+} 
+.foots p a img{ 
+    height:45px; 
+    width:45px;  
+    margin-right: 12px;
+}
+
+.fa{ 
+    color: white;  
+    font-size: 24px;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px){ 
+ 
+        
+    header{ 
+    
+    flex-direction: column;
+    } 
+    .h1{ 
+    margin-bottom: 12px;
+    }
+    .navbar ul li a{ 
+    
+    padding: 0px 9px;
+    font-size: 1rem;
+    } 
+    .item1{ 
+    margin-top: -1vh;
+    }
+    .item1 h2{ 
+        font-size: 1.4rem;
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-bottom: -11px;
+ }
+    .cont{ 
+    width: 64vw;
+    margin-left: 5px;
+    font-size: 0.6rem;
+    } 
+    
+    .btn{ 
+    margin-left: -4vw;
+    font-size: .8rem;
+    margin-top: 0.9vh; 
+     height: 24px;
+    }
+    .item2 img{  
+    height: 11vh;
+    } 
+    
+
+    /* courses head */ 
+    #courses-head{  
+    margin-top: 43px;
+    
+    }  
+    .courses h3{ 
+    font-size: 0.9rem; 
+    width: 98px; 
+    padding: 3px 0px;
+    margin-left: 15px;
+    }
+    .courses h2 {  
+    font-size: 1.3rem; 
+    margin-left: 14px;
+    
+    }  
+    .courses {
+    margin-left: 0px;
+}
+    .courses div a {  
+    font-size: .8rem;
+    margin: 0px 10px;
+    padding: 2px 3px;
+    }
+    
+    
+    .trend{  
+    font-size: 1.5rem;
+    
+    }   
+
+    .box{ 
+        height: 220px;
+    font-size: 0.7rem;
+    width: 129px;
+}
+     
+    .box img{
+        height: 115px;
+    width: 106px; 
+    padding-bottom: 0px;
+}
+    
+
+    .box button{ 
+        font-size: 0.7rem;
+    height: 21px;
+    width: 101px;
+    
+    }
+    
+    
+    
+    /* headline */ 
+    .mid-heading{ 
+        height: 77px; 
+     
+  }  
+    .mid-heading img{
+        height: 85px;
+        width: 100px;
+ }
+    
+    .mid-heading h2{    
+        font-size: 1rem;
+    
+    } 
+    
+    .mid-heading .midd{  
+     font-size:.7rem; 
+     margin-top:2px ;
+    } 
+    .mid-heading .btn2{ 
+        font-size: .6rem;
+        padding: 0px 5px; 
+        margin-top: -8px;
+    } 
+
+
+    /* headline-2 */
+    #headline-2 h2{  
+    font-size: 1.8rem;
+    
+    } 
+    .about{ 
+    
+    flex-wrap: wrap; 
+    justify-content: center;
+    } 
+    
+    .ab{  
+        height: 188px;
+        width: 135px;
+        font-size: 0.6rem;
+        margin: 11px 21px;
+    }
+    .ab img{
+        margin: 17px 0px;
+    height: 91px;
+    width: 90px;
+}
+    .ab h3{  
+    margin-top: -4px;
+    font-size: 0.85rem;
+    } 
+    
+    /* opinion */  
+    #opinion{  
+ 
+        height: 125px;
+    
+    }
+    
+    .opi-cont{
+        display: flex;
+        margin: auto; 
+        width: 97%;
+    
+    }  
+    .opi-cont img{ 
+        height: 108px;
+    border-radius: 116px;
+    margin-left: -3px;
+    width: 109px;
+    margin-top: 7px;
+    
+    }
+    .opi-cont div{ 
+        margin-top: 6px;
+        margin-left: 13px;
+        font-size: .77rem;
+    }
+    
+
+    
+    /* offered */ 
+    
+    #offered h2 { 
+    font-size: 1.4rem;
+    } 
+    .sec{ 
+    display: block; 
+    margin: 0px 5px; 
+    
+    } 
+    .sec div { 
+    font-size: 0.9rem;
+    width: 85vw;
+    margin: 12px 15px;
+    font-weight: 800; 
+    
+    }  
+    .sec1 div p{ 
+    font-size: 0.6rem;
+    }
+    
+    
+    
+    
+    
+    /* features */ 
+    #features h2 
+    { 
+    font-size: 1.4rem;
+    } 
+    
+    
+    .small_logo img{ 
+    height: 36px;
+    margin: 1px 9px;
+    } 
+    
+    
+    
+    
+    
+    /* teacher */
+    
+    #teacher h2 { 
+    font-size: 1.5rem;
+    } 
+    
+    .teach {
+    flex-wrap: wrap;  
+    /* justify-content: flex-start;  */
+    /* margin-left: 22px; */
+    
+    } 
+    .teach1{ 
+        font-size: 0.4rem;
+        height: 151px;
+        width: 112px; 
+        text-align: center; 
+      
+    }
+    .teach img {  
+        margin-top: 8px;
+      height: 91px;
+    width: 97px;
+    }
+    .teach1 p{  
+        font-size:.6rem
+    }
+    /* footer */  
+    #foot{ 
+    height: 80%;
+    }
+    #foot h4 {
+    font-size: 0.8rem;
+    }
+    
+    #foot p{ 
+    font-size: .5rem;
+    }  
+    .foot1{   
+    margin-left: 34px;
+    
+    }   
+    
+    .foots p a img{ 
+    height: 21px;
+    width: 26px;
+    }
+    .reser{ 
+    font-size: .5rem;
+    }  
+    .foots{ 
+    margin: 33px 10px;
+    } 
+    #foot h4{ 
+    font-size: .7rem;
+    }   
+
+    .fa{   
+        font-size: 13px;
+        
+
+    }
+}
+</style>
+  
+<body>   
+  <div class="h1">
+      <div class="h-1">
+          
+      </div> 
+
+      <div class="h-2"> 
+        <header>
+            <div id="logo"> 
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLWwJNV8EQvqygzC4H5HyLAn9jz0dgO6irUR8whKteBOo6m2P8XeUGkvZFTY-2sARKY2nyGD9P9T7kW8PazNfS10ZZT90A458w8CQKrihC7e8hFxjLEj5_guSOeZTPRrnQAhoD1MilgNI6I-FptufjTr5A=s200-no?authuser=0" alt="">
+            </div> 
+            <nav class="navbar">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">For Employers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul> 
+            </nav> 
+       
+        </header> 
+       
+      
+        <div class="container">
+            <div class="item1"> 
+                <h2>Welcome to Baoiam</h2> <br>
+           
+                <div class="cont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus assumenda commodi!
+                    Adipisci numquam facere debitis, ea expedita maiores est eaque omnis odit? 
+                </div>
+              
+               <div>
+                   <button type="button" class="btn"> Explore &#x21e8; </button>
+              </div>
+    
+            </div> 
+            <div class="item2"> 
+                <img src="https://tse2.mm.bing.net/th?id=OIP.SaHFE0-AQ9e5RcaeuUd0lAHaE8&pid=Api&P=0&w=600&h=400" alt="">
+    
+            </div>
+          </div> 
+       
+      </div>
+  </div>
+   
+   
+   
+      <section id="courses-head">
+      <div class="courses">
+        <h2>
+            Popular courses available here in Baoiam:  
+        </h2><br> 
+        <div>
+        <h3>Duration :</h3>
+        <li><a href="">2 months</a></li>
+        <li><a href="">3 months</a></li>
+        <li><a href="">6 months</a></li>
+    </div>
+    </div>  
+    <h2 class="trend">Trending Courses</h2>
+    <div class="boxes">
+        <div class="box box1"><img src="https://tse1.mm.bing.net/th?id=OIP.HyWqx5pB9G2ewbtOxN51CAHaHd&pid=Api&P=0&w=173&h=174" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia iste vero. Mollitia, consequatur ex.</p><br>
+        <button type="button">Start Course &#x21e8;</button>
+    </div>
+        <div class="box"><img src="https://tse1.mm.bing.net/th?id=OIP.kvccgZ6NoBbP7b1hTJULRAHaEK&pid=Api&P=0&w=352&h=198" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia iste vero. Mollitia, consequatur ex.</p><br>
+        <button type="button">Start Course &#x21e8;</button>
+    </div>
+        <div class="box"><img src="https://tse1.mm.bing.net/th?id=OIP.6bDh9BkwXjwc4ZulCB2hMQHaEK&pid=Api&P=0&w=258&h=145" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia iste vero. Mollitia, consequatur ex.</p><br>
+        <button type="button">Start Course &#x21e8;</button>
+    </div>
+
+        <div class="box"><img src="https://tse2.mm.bing.net/th?id=OIP.4bnpzicgvIF4oaCxpPFtkwHaKV&pid=Api&P=0&w=109&h=152" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia iste vero. Mollitia, consequatur ex.</p><br>
+        <button type="button">Start Course &#x21e8;</button>
+    </div>
+    </div>
+
+   </section> 
+
+   <section id="headline">
+    <div class="mid-heading"> 
+        <div>
+           <img src="https://img.freepik.com/free-vector/student-with-laptop-studying-online-course_74855-5293.jpg?t=st=1645880716~exp=1645881316~hmac=b99323b8e52e8a3e95653e26cc7c04ea749c6c0f598ebd8db2dea60d26efb940&w=1060" alt="">
+        </div>
+    <div class="head_cont" >
+        <h2>Try one and one learning</h2>
+        <div class="midd">
+          Get personalised instruction and tutoring on any subject 
+        </div>
+         <button class="btn2">Browse Classes &#x21e8;</button>
+    </div>
+    </div> 
+ 
+   </section> 
+
+<section id="headline-2">
+    <h2>Learning in Baoiam</h2> 
+    <div class="about">
+        <div class="ab"><img src="https://tse3.mm.bing.net/th?id=OIP.3euvAZQ7lTsp3NDuwytXjgHaEz&pid=Api&P=0&w=220&h=143" alt="">
+            <p><h3>Any Kid, Any Interest</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit pariatur autem!
+             </p>
+        </div>
+        <div class="ab"><img src="https://tse1.mm.bing.net/th?id=OIP.WlUeoBg9-7wyGqK-2XHM-gHaE1&pid=Api&P=0&w=236&h=154" alt=""><p><h3>Small & Social</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit pariatur autem!</p></div>
+        <div class="ab"><img src="https://global-uploads.webflow.com/5f8fb7d0048adf388f6dcce3/60185f39941e18e4e110df7e_shutterstock_655174972%20(1)-p-800.jpeg" alt=""><p><h3>Educators You Can Trust</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit pariatur autem!</p></div> 
+        <div class="ab"><img src="https://transmission-private.com/admin/resources/banners/transmission-private-high-net-worth-w900h620.jpg" alt=""><p><h3>Educators You Can Trust</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit pariatur autem!</p></div>
+    </div>
+</section> 
+
+<section id="opinion">
+  <div class="opi-cont"> 
+    <img src="https://www.goodwilldetroit.org/wp-content/uploads/2017/03/for-individuals.jpg" alt="">  
+  <div>
+    “I now feel empowered when it comes to her education. With Outschool, you have the power to choose. I have been able to watch her grow over the past several months.” 
+    <br><br>
+    -sajkffak
+  </div> <br>
+
+  </div>
+</section> 
+
+<section id="offered"> 
+    <h2>Courses Offered by Baoiam </h2> 
+ <div class="sec">
+    <div class="sec1">
+        <div>
+            <img src="" alt="">Arts <br> 
+          <p>
+            Drawing | Photography | Dance | Theatre | Film | Sewing | All Arts classes
+          </p>
+        </div> 
+        <div>
+            <img src="" alt="">English<br> 
+            <p>
+              Creative Writing | Grammar | Spelling | Book Club | Essay Writing | Poetry | Literature  All English classes
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">Life Skills<br> 
+            <p> Cooking| Financial Skills | Study Skills | Social Skills | Critical Thinking | All Life Skills classes
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">Social Studies<br> 
+            <p> Geography |World History | American History |  Anthropology| Politics | All Social Studies classes
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">World Languages<br> 
+            <p> Spanish | American Sign Language | French |  Japanese | Latin  German | Chinese | Greek | Italian | Mandarin  All World Languages
+              </p>
+        </div>
+     </div> 
+     <div class="sec1">
+        <div>
+            <img src="" alt="">Coding & Tech <br> 
+            <p> Coding | Video Game Design |
+   Engineering | Internet Safety | Animation | All Coding & Tech classes
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">Music<br> 
+            <p> Guitar | Piano | Singing | Composers | Music   Theory |  All Music classes
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">Math <br> 
+            <p> Algebra | Numbers | Geometry | Fractions |  Calculus | Statistics |  Probability | All Math
+              </p>
+        </div> 
+        <div>
+            <img src="" alt="">Health and Awareness<br> 
+            <p> Hygiene | Emotions | Exercise | Mindfulness | Nutrition | All Health & Wellness
+              </p>
+        </div> 
+     </div>
+ </div>
+
+</section> 
+
+<section id="opinion">
+    <div class="opi">
+  
+    </div> 
+    <div class="opi-cont"> 
+      <img src="http://storecontent.gallup.com/pdpimages/11320/image01_social.jpg" alt="">  
+    <div>
+        “My kids instantly fell in love with Outschool because they were able to take some of their favorite classes from teachers all over the world and they also found friends in those teachers and students.” 
+        <br><br>
+        -asdjk
+      <br>
+   
+    </div> <br>
+  
+  
+    </div>
+  </section> 
+
+<section id="features">
+<h2>Featured By</h2> 
+<div class="small_logo">
+    <img src="https://www.transparentpng.com/thumb/telephone/clipart-phone-icon-pictures-20.png" alt="clipart">
+    <img src="https://www.transparentpng.com/thumb/handicraft/handicrafts-cutting-paper-crop-crafts-cut-icon-pictures-11.png" alt="handicrafts">
+    <img src="https://www.transparentpng.com/thumb/yin-yang-tattoos/yin-yang-dragon-vector-logo-pictures-22.png" alt="yin ">
+    <img src="https://www.transparentpng.com/thumb/handicraft/black-handicrafts-cutting-paper-crop-crafts-cut-icon-picture-20.png" alt="black">
+    <img src="https://www.transparentpng.com/thumb/artwork/VfibIM-gallery-svg-png-icon-free-download.png" alt="art ">
+ 
+
+</div>
+</section > 
+
+<section id="teacher"> 
+
+           <h2>10,000+ Experienced Teachers</h2> 
+           
+           <div class="teach">
+                <div class="teach1"><img src="https://www.welligent.com/wp-content/uploads/2020/11/blog-idd1-image@2x-copy-2-1024x458.jpg" alt=""><br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+                <div class="teach1"><img src="https://www.futuresforbusiness.com/phpthumbsup/sx/0/sy/0/sw/1800/sh/876/w/1600/src/var/www/users/futures/the-futures-group.com/public_html/ffb/images/image-from-rawpixel-id-1211575-jpeg.png" alt=""><br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div>
+                <div class="teach1"><img src="https://cielo24.com/wp-content/uploads/2015/08/The-Individuals-With-Disabilities-Education-Act-or-IDEA1.jpg" alt=""><br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit </p></div>
+                <div class="teach1"><img src="http://dbhdduniversity.com/images/istock_000020368500xsmall.jpg?crc=474089818" alt=""><br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div>
+           </div>
+  
+
+</section>
+<footer> 
+  <div id="foot">
+    <div class="foots foot1">
+        <h4>Address</h4> <br>
+        <p> 28°37'44.9"N 77°22'48.4"E H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301 
+        </p> <br>
+        <div>
+          <h4>Talk With Us</h4> <br>
+          <p>
+            +91 1234567890
+          </p> 
+      </div>
+        </div>
+        <div class="foots"> 
+            <h4>Company</h4> <br>
+            <p>
+                About us <br><br>
+                Contact us <br><br>
+                BAOIAM Blog <br><br>
+                News <br><br>
+                Child saftey <br><br>
+                Why BAOIAM <br><br>
+                Our results <br><br>
+                Careers <br><br>
+                Help India lean <br><br>
+          </p>
+      
+        </div>
+        <div class="foots"> 
+            <h4>Other Links</h4> <br>
+            <p>
+                Free live classes <br> <br>
+                Why teach with BAOIAM <br> <br>
+                Try WAVE <br> <br>
+                Try Whiteboard <br> <br>
+                BAOIAM improvement promise <br> <br>
+                VOLT <br> <br>
+                Benefits <br> <br>
+                Engineering Blog <br> <br>
+          </p>
+      
+        </div>
+        <div class="foots foots1"> 
+            <h4>Social Media Links</h4> <br>
+            <p>
+              <a href="https://ww.facebook.com" target="_blank">  <i class="fa fa-facebook"></i><br><br></a>
+                
+              <a href="https://ww.instagram.com" target="_blank">
+                <i class="fa fa-instagram"></i></a><br><br>
+                   
+                <a href="https://ww.twitter.com" target="_blank">
+                <i class="fa fa-twitter" ></i></a>
+          </p> 
+      
+        </div> 
+      
+  </div>   
+  <hr>
+<div class="reser">
+    &copy; 2022 All Rights Reserved-BOAIAM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;        Privacy Policy     Terms and conditions
+</div>
+  </footer>
+    
+</body>
+</html>

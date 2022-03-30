@@ -1,0 +1,274 @@
+@media screen and (max-width:886px) {
+    label #bar-btn{
+        display: block;
+        margin-top: 20px;
+      }
+      ul.links{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background-color: rgb(255, 145, 0);
+        top: 140px;
+        right: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+      }
+     
+      ul.links li{
+        display: block;
+        margin: 30px 0;
+        line-height: 20px;
+        margin-left: 20px;
+      }
+      .nav-links ul .nav-li:hover{
+          background: #fff;
+          color: #EE6024;
+      }
+      #check:checked ~ ul.links{
+        right: 0;
+      }
+    
+      #check:checked ~ #bar-btn{
+        display: none;
+      }
+      #check:checked ~ #cancel{
+        display: block;
+      }
+}
+
+@media screen and (max-width:620px){
+    label #bar-btn, label #cancel {
+        margin-right: -15px;
+    }
+    ul.links{
+        text-align: left;
+    }
+}
+
+/* Home */
+
+@media screen and (max-width:1090px){
+    .home-img img {
+        width: 450px;
+    }
+    .join-btn{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:908px){
+    .home{
+        flex-direction: column;
+    }
+    .home-img img {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:505px){
+    .home-header .main-header {
+        font-size: 4.5rem;
+    }
+    .home-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* our-courses */
+@media screen and (max-width:1135px){
+    .part-two img{
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .rowdiv{
+        flex-direction: column;
+    }
+    
+    .course-column{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 33px; 
+    }
+    .part-two img{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .course-column{
+        flex-direction: column-reverse;
+    }
+    .part-one{
+        margin-top: 30px;
+    }
+}
+
+/* our plans */
+@media screen and (max-width:1305px){
+    .plan-column img{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:1225px){
+    .plan-row{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 4rem;
+      }
+}
+
+@media screen and (max-width:635px){
+    .our-plan{
+        width: 80%;
+    }
+    .plan-row{
+        grid-template-columns:  1fr;
+        gap: 2rem;
+      }
+}
+
+
+/* Boards */
+@media screen and (max-width:1075px){
+    .boards-info{
+        width: 80%;
+    }
+    .boards-info h1,
+    .boards-info .para{
+        padding: 0 ;
+    }
+    .boards-row{
+        grid-template-columns: 1fr 1fr ;
+    }      
+    .board-column p{
+        padding-top: 20px;
+        line-height: 1.7;
+    }
+
+    .yt-video{
+        height: 400px;
+    }
+}
+@media screen and (max-width:675px){
+    .boards-row{
+        grid-template-columns: 1fr;
+    }  
+    .get-started-btn{
+        width: 320px;
+    } 
+    .yt-video{
+        height: 300px;
+    }
+}
+
+
+/* Testimonial */
+@media screen and (max-width:1080px){
+    .student-review{
+        flex-direction: column;
+    }
+    .std-img{
+        border: none;
+    }
+    .std-img img{
+        border: 5px solid rgba(240, 131, 42, 0.67);
+    }
+    .std-info{
+        height: 163px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .reviews-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .rev-p{
+        height: 130px;
+    }
+
+}
+
+
+/* Statistics  and demo book */
+@media screen and (max-width:970px){
+    .why-us-stat{
+        flex-direction: column;
+    }
+    .statistics{
+        display: inline-grid;
+        row-gap: 8px;
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    .left-part{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:1140px){
+    .platforms{
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width:770px){
+    .platform-available{
+      background-color: #fff;
+      color: black;
+      border: none;
+      box-shadow : none;
+      padding: 10px;
+      margin: 80px 10px;
+    }
+    .platform-available h1{
+        font-size: 30px;
+    }
+    .devices{
+        flex-direction:column;
+    }
+    .all-devices {
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px){
+    nav {
+        display: flex;
+        padding: 12px 54px;
+    }
+    .home-img img {
+        width: 350px;
+    }
+    .home-header p{
+        padding: 10px 16px;
+    }
+    .join-btn {
+        width: 270px;
+    }
+    .rev-p {
+        height: 167px;
+    }
+    .councelling-img{
+        width: 280px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .councelling-img img{
+        width: 280px;
+    }
+    .reviews-section {
+        column-gap: 0rem;
+    }
+    .student-review {
+        padding: 20px 9px;
+    }
+}
+
+
+

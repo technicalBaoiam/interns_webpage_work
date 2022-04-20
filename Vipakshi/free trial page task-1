@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: block;
+            margin: 1px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .heading {
+            border: solid 2px black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+
+
+        .containerct {
+            border-bottom: solid 2px rgb(128, 128, 128);
+            font-size: 8px;
+        }
+
+        .logo img {
+            height: 6.4em;
+            width: 10.3em;
+            margin-left: 1.2em;
+            margin-top: -0.4em;
+            margin-bottom: -0.1emx;
+        }
+
+        nav ul {
+            display: flex;
+            box-sizing: border-box;
+            padding-inline-start: 0px;
+
+
+
+        }
+
+        .form-control {
+            height: 40px;
+            box-shadow: none;
+            color: #969fa4;
+        }
+
+        .form-control:focus {
+            border-color: #5cb85c;
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 3px;
+        }
+
+        .signup-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        .signup-form h2 {
+            color: #636363;
+            margin: 0 0 15px;
+            position: relative;
+            text-align: center;
+        }
+
+
+
+        .signup-form h2:before {
+            left: 0;
+        }
+
+        .signup-form h2:after {
+            right: 0;
+        }
+
+        .signup-form .hint-text {
+            color: #999;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .signup-form form {
+            color: #999;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #f2f3f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form input[type="checkbox"] {
+            margin-top: 3px;
+        }
+
+        .signup-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+            min-width: 140px;
+            outline: none !important;
+        }
+
+        .signup-form .row div:first-child {
+            padding-right: 10px;
+        }
+
+        .signup-form .row div:last-child {
+            padding-left: 10px;
+        }
+
+        .signup-form a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .signup-form a:hover {
+            text-decoration: none;
+        }
+
+
+
+        .signup-form form a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li {
+            list-style: none;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(244 136 10);
+            padding: 0em .6em;
+            font-size: 2.7em;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: petite-caps;
+
+
+        }
+
+        nav ul a:hover {
+            background-color: rgb(244 136 10);
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+
+
+        }
+
+        .btn {
+            border: solid black 3px;
+            font-weight: 700;
+            height: 2.2em;
+            background-color: rgb(244 136 10);
+            color: white;
+            font-size: 2.7em;
+            display: inline-block;
+            border-radius: 5px;
+            width: 10em;
+            margin-top: 2em;
+            margin-left: 18em;
+            cursor: grab;
+            box-shadow: 3px 3px 0px 1px rgb(90, 88, 88);
+            text-align: center;
+            padding: 2px;
+
+
+
+
+
+        }
+
+        .h3 {
+            font-size: 5em;
+            font-weight: 700;
+            text-align: left;
+            color: white;
+            margin: .5em;
+        }
+
+        button {
+            border: solid black 3px;
+            font-weight: 800;
+            height: 1.7em;
+            background-color: rgb(56 53 50);
+            color: white;
+            font-size: 2.7em;
+            display: block;
+            border-radius: 7px;
+            width: 10em;
+            margin-top: -8px;
+            margin-left: 18em;
+            margin-bottom: 2em;
+            cursor: grab;
+            box-shadow: 1px 1px 0px 1px aliceblue;
+            text-align: center;
+            padding: 2px;
+
+        }
+
+        .help {
+            font-size: 2.5em;
+            text-align: left;
+            color: white;
+            margin: 2.4em
+        }
+
+        input[type="checkbox"] {
+            height: .6em;
+            width: .6em;
+            font-size: 1.5em;
+        }
+
+        .submit:hover {
+            background-color: antiquewhite;
+            color: orange;
+        }
+
+        btn:hover {
+
+            color: black;
+            background-color: white;
+
+
+        }
+
+
+        .secondcontainer {
+
+            background: white;
+            font-size: 8px;
+        }
+
+        h1 {
+            margin-top: 1em;
+            font-size: 10.5em;
+            padding: 0em;
+            /* margin: 1em; */
+            font-weight: 900;
+            text-align: center;
+
+        }
+
+
+
+        #para {
+            color: rgb(252 118 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            padding: 5px;
+            margin: 58px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .thirdcontainer {
+            border: transparent 2px white;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefJ60kc1mBHonM1g4U18tG4K4nGUpThi3EQ&usqp=CAU');
+            height: auto;
+            width: 100%;
+            font-size: 8px;
+        }
+
+        .new {
+
+            padding: 14em;
+            margin-top: 5.6em;
+            margin-bottom: 7.6em;
+            margin-left: 0em;
+            margin-right: 0em;
+            max-width: 100%;
+            border: solid 2px black;
+            background-color: rgb(238, 141, 30);
+            box-shadow: 7px 5px 12px 1px #32302d;
+            border-radius: 1em;
+
+        }
+
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3.3em;
+            font-weight: 900;
+            margin-top: -34px;
+        }
+
+        #paaa {
+            font-size: 2.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .submit {
+            background: #faf9f9;
+            color: white;
+            border-style: solid;
+            border-color: black;
+            height: auto;
+            width: 50%;
+            margin: 3em;
+            margin-top: 7em;
+            color: black;
+            font-size: 1.6em;
+            padding: 0.3em;
+            display: initial;
+            margin-left: 12em;
+            cursor: pointer;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #form {
+            font-size: 1.4em;
+        }
+
+        .thirdcontainer {
+            border: transparent 2px white;
+            background: antiquewhite;
+            width: 100%;
+            font-size: 8px;
+        }
+
+        .creative {
+            border: solid 2px black;
+            margin-left: 14%;
+            margin-right: 14%;
+            border-radius: 18px;
+            margin-top: 12em;
+            margin-bottom: 12em;
+            background-color: #ee9714;
+            box-shadow: 7px 5px 1px 1px grey;
+            font-size: 7px;
+
+        }
+
+        .vre {
+            margin-top: 2em;
+        }
+
+
+
+
+        .sticky {
+
+            display: inline-block;
+            border: 2px solid black;
+            width: 90px;
+            height: 25px;
+            background-color: rgb(244 136 10);
+            border-radius: 9px;
+            margin: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            left: 3px;
+            top: 307px;
+            padding: 1px 3px;
+            margin: 0px;
+            vertical-align: bottom;
+            background-color: orange;
+
+        }
+
+        #form {
+            font-size: 2.4em;
+        }
+
+        input {
+            width: 200px;
+            height: 20px;
+
+        }
+
+        .select {
+            width: 200px;
+            height: 20px;
+            display: block;
+
+        }
+
+        h2 {
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 7em;
+            color: black;
+            text-align: center;
+            text-decoration: dashed;
+            transform: rotate(0px);
+            padding: 0em;
+            margin: .7em;
+            font-weight: 800;
+        }
+
+        .image img {
+            height: 36em;
+            width: 42em;
+            padding: 0em;
+            margin-left: inherit;
+            margin-top: 2em;
+            margin-left: -175px;
+
+
+        }
+
+        .fourthcontainer {
+            border: solid 1px white;
+            font-size: 8px;
+
+            background-color: rgba(241, 240, 237, 0.952);
+
+        }
+
+
+
+        .testimonial {
+            display: flex;
+            margin-left: 2em;
+            margin-right: 2em;
+
+        }
+
+        .box {
+
+            margin: 1.5em;
+            background-color: rgb(238 151 20);
+            border: solid 2px black;
+            width: auto;
+            box-shadow: 1px 1px 1px 1px black;
+            padding: 2em;
+        }
+
+        .box :hover {
+            background-color: rgb(244 136 10);
+            color: white;
+
+        }
+
+        h5 {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        h6 {
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+
+        .p3 {
+            font-size: 1.7em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+
+
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .container .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .container .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #e5852c, #e8b257);
+        }
+
+        .content form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+
+        form .input-box span.details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+
+
+        form .gender-details .gender-title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        form .category {
+            display: flex;
+            width: 80%;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+
+        form .category label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        form .category label .dot {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #d9d9d9;
+            border: 5px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+
+
+        form input[type="radio"] {
+            display: none;
+        }
+
+        form .button {
+            height: 45px;
+            margin: 35px 0
+        }
+
+        form .button input {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #e5852c, #e8b257);
+            ;
+        }
+
+        form .button input:hover {
+            /* transform: scale(0.99); */
+            background: linear-gradient(-135deg, #202020, #b3b1b0);
+        }
+
+        @media(max-width: 584px) {
+            .container {
+                max-width: 100%;
+            }
+
+            form .user-details .input-box {
+                margin-bottom: 15px;
+                width: 100%;
+            }
+
+            form .category {
+                width: 100%;
+            }
+
+            .content form .user-details {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+
+            .user-details::-webkit-scrollbar {
+                width: 5px;
+            }
+        }
+
+        @media(max-width: 459px) {
+            .container .content .category {
+                flex-direction: column;
+            }
+        }
+
+
+        .footer {
+            background-color: black;
+            color: white;
+            margin-top: 51px;
+            font-size: 8px;
+        }
+
+        .cont {
+            max-width: fit-content;
+            padding: 0em;
+            margin: .2em;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.4em 3em;
+            margin-left: 2.5em;
+            margin-right: 0 em;
+        }
+
+        .body {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #e5852c, #e8b257);
+
+        }
+
+
+        .first {
+            font-size: 1em;
+            color: white;
+            text-align: left;
+        }
+
+        ul {
+            text-decoration: none;
+        }
+
+        .lil {
+            list-style: none;
+            color: white;
+            padding: 1.1em;
+            margin: 0em;
+            font-size: 1.2em;
+        }
+
+
+
+
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 0em;
+            margin: auto;
+        }
+
+
+        .anchor {
+            padding: 0em;
+            margin: 0em;
+            text-decoration: underline;
+            color: blue;
+        }
+
+
+        h3 {
+            padding: .2em;
+            margin: 1em;
+            text-align: centre;
+            text-decoration: dotted;
+            font-size: 3.2em;
+        }
+
+        .lastcontainer {
+            border: solid 2px white;
+            background-color: antiquewhite;
+
+            margin-top: 2em;
+            width: 100%;
+            height: 34px;
+            display: flex;
+
+
+        }
+
+        .img {
+            height: 71em;
+            width: 31em;
+        }
+
+        #quote {
+            padding: .5em;
+            margin: auto;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black
+        }
+
+        #one {
+            display: inline;
+        }
+
+        .linksl {
+            margin: 4.3em;
+        }
+
+        .linksl a {
+            display: flex;
+            margin: 1em;
+        }
+
+        .copyright {
+            text-align: center;
+            height: 3em;
+        }
+
+        @media only screen and (max-width:900px) {
+            body {
+                display: block;
+                margin: 0px;
+            }
+
+            header {
+                flex-direction: column;
+
+            }
+
+            .logo img {
+                height: 59px;
+                width: 73px;
+                margin-left: 10px;
+                margin-top: -3px;
+                margin-bottom: -4px;
+            }
+
+            .container {
+                font-size: 3.5px;
+            }
+
+            .secondcontainer {
+                font-size: 2px;
+            }
+
+            .content {
+                display: flex;
+            }
+
+            nav ul li a {
+                font-size: 1.5em;
+                font-weight: 700;
+                padding: 0.5em;
+                width: 100%;
+                margin: 0px;
+                font-variant: petite-caps;
+            }
+
+            .image img {
+                height: 86em;
+                width: 77em;
+
+            }
+
+
+
+
+            h1 {
+                margin-top: 1em;
+                margin-left: 1em;
+                font-size: 12.5em;
+                padding: 0em;
+                /* margin: 1em; */
+                font-weight: 900;
+                text-align: left;
+            }
+
+            .btn {
+                font-size: 4.2em;
+                padding: 0em;
+                width: 8em;
+                margin-left: 12em;
+                margin-top: 3em;
+            }
+
+            #para {
+                font-size: 7.5em;
+                margin: 5em;
+                margin-inline-start: 3px;
+                text-align: left;
+                margin-top: 4em;
+                margin-bottom: 2em;
+            }
+
+            .thirdcontainer {
+                font-size: 3px;
+            }
+
+            h4 {
+                font-size: 9em;
+                margin-top: .6em;
+                font-weight: 900;
+
+            }
+
+            #paaa {
+                font-size: 5em;
+                margin: .6em;
+
+            }
+
+            form {
+                font-size: 4em;
+            }
+
+
+            input {
+                font-size: 0.9em;
+                width: 15em;
+                height: 1.8em;
+            }
+
+            .select {
+                font-size: 1.4em;
+                width: 15em;
+                height: 1.8em;
+
+            }
+
+            #form {
+                font-size: 2em;
+            }
+
+            .fourthcontainer {
+                font-size: 3.4px;
+                background-color: rgba(241, 240, 237, 0.952);
+                margin-bottom: 4em;
+
+            }
+
+            .linksl {
+                margin: 3.3;
+            }
+
+            h2 {
+                font-size: 10em;
+                margin-top: 1em;
+                font-weight: bolder;
+            }
+
+            .testimonial {
+                flex-wrap: wrap;
+                width: 50%;
+                height: auto;
+                margin: auto;
+                font-size: 1.6em;
+
+
+            }
+
+            .submit {
+                align-items: center;
+                margin-left: 12em;
+            }
+
+            .box {
+                width: auto;
+            }
+
+            h6 {
+                font-size: 1.2em;
+            }
+
+            .footer {
+                font-size: 3px;
+                height: auto;
+                justify-content: space-around;
+
+            }
+
+            .cont {
+                margin-top: 8em;
+            }
+
+
+
+            h3 {
+                font-size: 1.6em;
+                margin-top: 5em;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .li {
+
+                font-size: 0.9em;
+                padding: 0em;
+                text-align: center;
+                margin-left: -3em;
+
+            }
+
+            .row {
+                padding: 0em;
+                margin-left: .2em;
+                margin-top: 4.2em;
+
+            }
+
+            .first {
+                font-size: 1.3em;
+
+            }
+
+            button {
+                margin-left: 3em;
+                height: 2em;
+            }
+
+            .creative {
+                font-size: 3.5px;
+            }
+
+            .cont {
+                margin-top: 2em;
+            }
+
+
+
+            .sticky {
+                font-size: 0.3em;
+                width: 8.5em;
+                height: 2.6em;
+            }
+
+        }
+    </style>
+    <title>BAIOM</title>
+</head>
+
+<div>
+
+    <div class="containerct">
+        <header>
+
+            <div class="logo"> <img src="C:\Users\Vipakshi Joshi\Downloads\d4695c3c-c237-42c8-8ceb-a0fa1e098161.jpg">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Search</a></li>
+
+
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+
+
+    <div class="secondcontainer">
+        <div class="content">
+            <div>
+                <div>
+                    <h1>Request A<br> Free Trail</h1>
+                </div>
+
+                <div class="btn" type="button">
+                    <btn>REGISTER</btn>
+                </div>
+
+                <p id="para">To start a school- or district-wide free trial <br>of GoGuardian's products,
+                    including
+                    Pear
+                    Deck<br>
+                    and Edulastic, please provide your information below!</p>
+
+            </div>
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/ae/5a/e1/ae5ae16a1f8bdad663c96a699d91e646.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="body">
+        <div class="container">
+            <div class="title">Registration</div>
+            <div class="content">
+                <form>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" placeholder="Enter your password" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input type="text" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register">
+                    </div>
+            </div>
+        </div>
+        </form>
+
+
+    </div>
+    <div class="creative">
+        <div>
+            <h3 class="h3">
+                Happy To Help You!
+            </h3>
+            <p class="help">
+                Need more details? Our expert academic counsellors will be happy to patiently explain everything that
+                you want to know.
+            </p>
+            <button>ask our expert</button>
+        </div>
+
+    </div>
+
+    <div class="fourthcontainer">
+        <div>
+            <h2>TESTIMONIALS</h2>
+        </div>
+        <div class="slide">
+            <div class="testimonial">
+                <div class="box1">
+                    <div class="box">
+                        <p class="p3">GoGuardian for us was a complete package. We had a demo and we gave it to
+                            our
+                            teachers
+                            and
+                            they fell in love with it within minutes, then when the demo was up... they almost
+                            revolted
+                            and
+                            they
+                            said, "whatever you do, don’t take away GoGuardian.</p>
+                        <h5>Shad McGaha</h5>
+                        <h6>Chief Technology Officer,
+                            Wichita Falls School District</h6>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <p class="p3">
+                        In today's digital age, it's vital to have a tool that provides insights into our
+                        students'
+                        online behavior. The Beacon alerts we have received have enabled us to find those
+                        children
+                        in
+                        need of
+                        extra attention and counseling which has helped us, and helped the students and their
+                        families.
+                        We can't
+                        afford not to take care of these kids.
+                    </p>
+                    <h5>Dr. Roland Rios</h5>
+                    <h6>Director of Technology,
+
+                        Fort Sam Houston Independent School District</h6>
+                </div>
+                <div class="box">
+                    <p class="p3">GoGuardian for us was a complete package. We had a demo and we gave it to our
+                        teachers
+                        and
+                        they fell in love with it within minutes, then when the demo was up... they almost
+                        revolted
+                        and
+                        they
+                        said, "whatever you do, don’t take away GoGuardian.</p>
+                    <h5>Shad McGaha</h5>
+                    <h6>Chief Technology Officer,
+                        Wichita Falls School District</h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="cont">
+            <div class="row">
+                <div class="first" id="one">
+                    <h3>Address</h3>
+                    <ul>
+                        <li class="lil">
+                            <p>28°37'44.9"N 77°22'48.4"E<br>
+                                H-182, Second Floor,<br> Sector 63, Noida,<br> Uttar Pradesh 201301</p>
+                        </li>
+                    </ul>
+                    <h3>Talk With US</h3>
+                    <ul>
+                        <li class="lil">
+                            <p>+91 1234567890</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="first">
+                    <h3>Company</h3>
+                    <ul>
+                        <li class="lil"><a href="#"> About us</a></li>
+                        <li class="lil"><a href="#">Contact Us</a></li>
+                        <li class="lil"><a href="#">Blog</a></li>
+                        <li class="lil"><a href="#">News</a></li>
+                        <li class="lil"><a href="#">Child Safety</a></li>
+                        <li class="lil"><a href="#">Why BAOIAM</a></li>
+                        <li class="lil"><a href="#">Our Results</a></li>
+                        <li class="lil"><a href="#">Carrers</a></li>
+                        <li class="lil"><a href="#">Help India Team</a></li>
+
+                    </ul>
+                </div>
+                <div class="first">
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li class="lil"><a href="#">Free Live Classes</a></li>
+                        <li class="lil"><a href="#">Why Teach With BAOIAM</a></ima>
+                        <li class="lil"><a href="#">Try Wave</a></li>
+                        <li class="lil"><a href="#">Try Whiteboard</a></li>
+                        <li class="lil"><a href="#">VOLT</a></li>
+                        <li class="lil"><a href="#">Micro Courses</a></li>
+                        <li class="lil"><a href="#">Benefits</a></li>
+                        <li class="lil"><a href="#">Engineering blog</a></li>
+                        <li class="lil"><a href="#">Board</a></li>
+                    </ul>
+                </div>
+                <div class="first">
+                    <h3>Social Media Links</h3>
+                    <div class="linksl">
+
+                        <a class="link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="link" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="link" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            &copy; 2022 all rights reserved-BOAIAM
+        </div>
+    </footer>
+
+
+
+    </body>
+
+</html>

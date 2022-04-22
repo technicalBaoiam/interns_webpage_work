@@ -1,0 +1,740 @@
+*{
+  margin: 0;
+box-sizing: border-box;
+  padding: 0;
+font-family: sans-serif;
+text-transform: capitalize;
+text-decoration: none;
+}
+:root {
+  --gradient: linear-gradient(90deg, #f1c40f, #f39c12);
+}
+section{
+  min-height: 100vh;
+  padding: 1rem 7%;
+  padding-top: 4rem;
+}
+body{
+  min-height: 100vh;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+ padding: 0px 7%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 1000;
+ border-bottom: 0.3rem solid #f39c12;
+}
+header .logo{
+  font-weight: bolder;
+  font-size: 29px;
+  color: #f39c12;
+}
+header .navbar ul{
+  list-style: none;
+
+}
+header .navbar ul li{
+  position: relative;
+  float: left;
+
+}
+header .navbar ul li a{
+  font-size: 16px;
+  padding: 20px;
+  color: #333;
+  display: block;
+
+}
+header .navbar ul li a:hover{
+  background: #f39c12;
+  color: #fff;
+}
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+left: 200px;
+top: 0;
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+header label{
+font-size: 20px;
+color: #333;
+cursor: pointer;
+display: none;
+}
+
+  .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    /* border-bottom: 0.3rem solid #f39c12; */
+  }
+  .part1 .talk{
+    width: 40%;
+  }
+  
+  .part1 .talk h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: black;
+  
+  }
+  
+  .part1 .talk p{
+    font-size: 1.2rem;
+    color: black;
+  }
+  .part1 .img{
+    width: 45%;
+  
+  }
+  .part1 .img img{
+    width: 100%;
+  }
+  
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+  }
+  
+  .btn {
+    padding: 0.7rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #f39c12;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border-style: none;
+  }
+  .btn::before{
+    content: '';
+    position: absolute;
+    top: -1rem; left: -100%;
+  background: #fff9;
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+  }
+  .btn:hover::before{
+    transition: .3s linear;
+    left: 120%;
+  }
+  .btnn {
+    padding: 0.57rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #f39c12;
+    border-radius: 5rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border-style: none;
+  }
+  .btnn::before{
+    content: '';
+    position: absolute;
+    top: -1rem; left: -100%;
+  background: #fff9;
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+  }
+  .btnn:hover::before{
+    transition: .3s linear;
+    left: 120%;
+  }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+  color: #f39c12;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #f39c12;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #f39c12;}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  /* margin-top: 20px; */
+}
+
+/* Float four columns side by side */
+.column {
+  /* margin-top: -80px; */
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f39c12;
+  color: white;
+  
+}
+
+.fa {font-size:50px;}
+
+
+
+
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color:#f1c40f;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columnn {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.open-button {
+  background-color:#f39c12;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color:gray;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.contaiiner {
+  padding: 64px;
+}
+
+.roow:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+.coontainer{
+	max-width: 1170px;
+	margin:auto;
+}
+.rrow{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #f39c12;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media(max-width:991px){
+    header{
+      padding: 20px;
+  
+    }
+    header label{
+      display: initial;
+    }
+    header .navbar{
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      background: #fff;
+      border-top:1px solid rgba(0,0,0,.1);
+      display: none;
+    }
+    header .navbar ul li{
+      width: 100%;
+  
+    }
+    header .navbar ul li ul{
+   position: relative;
+  width: 100%; 
+   }
+   header .navbar ul li ul li{
+     background: #eee;
+  
+   }
+   header .navbar ul li ul li ul{
+     width: 100%;
+     left: 0;
+   }
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+
+  .part1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 2rem, 1rem;
+    text-align: center;
+  }
+  .part1 .talk {
+    width: 80%;
+    margin: 2px 0 30px 0;
+  }
+  .part1 .talk h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+  }
+  .part1 .talk p {
+    font-size: 1.2rem;
+  }
+  .part1 .img {
+    width: 80%;
+  }
+  
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  }
+
+
+
+
+
+  @media screen and (max-width: 496px){
+    .part1 .talk h1 {
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+    }
+    .part1 .talk p {
+      font-size: 1.2rem;
+    }
+  
+  }
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }

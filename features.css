@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-color{
+    font-weight: bold;
+    font-size: 63px;
+}
+.text-color p{
+    padding-top: 120px;
+}
+.text-color p span{
+  -webkit-animation:colorchange 20s infinite alternate;
+     
+}
+.text{
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+@media only screen and (max-width:350px)
+{
+  .text-color{
+    font-weight: 700;
+    font-size: 53px;
+   }
+}
+@media only screen and (max-width:285px)
+{
+  .text-color{
+    font-weight: 700;
+    font-size: 43px;
+   }
+}
+
+/* ================================== */
+
+
+
+.img-size{
+    /* width: 30vw; */
+    height: 40vh;
+    margin-top: 10vh;
+}
+.img-size img{
+    padding-top: 10vh;
+    width: 26vw;
+    height: 60vh;
+    margin-left: 0.4vw;
+}
+@media only screen and (max-width:1340px)
+{
+  .img-size img{
+    width: 26vw;
+    height: 45vh;
+   
+  }
+}
+
+.mid-img{
+    margin-top: 80px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+
+
+@media only screen and (max-width:992px)
+{
+  .mid-img{
+    margin-top:30px !important ;
+  }
+
+  .img-size {
+    visibility: hidden;
+    display: none;
+  }
+  .mid-img-size img{
+    width: 50vw !important;
+  }
+   .order1{
+    order: 1;
+   }
+   .order2{
+    order: 2;
+   }
+}
+
+
+.mid-img-size{
+    background-color: rgb(254, 253, 250);
+      
+}
+.mid-img-size img{
+    width:25.2vw;
+    height:30vh ;
+    margin-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.mid-img-size p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.border{
+    width: 100%;
+    height: 2px;
+    margin-top: 0px;
+}
+
+.changecolor p{
+    margin-top: 70px;
+font-size: 48px;
+font-weight: 800;
+}
+.changecolor p span{
+    color:#313131;
+    position: absolute;
+     -webkit-animation:colorchange 25s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+    0% {    
+      color: blue;
+    }
+    
+    10% { 
+        color: #fd6906;  
+    }
+    
+    20% {   
+      color: #1abc9c;
+    }
+    
+    30% {   
+        color: #9a07d8;
+      }
+    
+    40% {  
+        color: red;
+      }
+    
+    50% {    
+      color: #2c5177;
+    }
+    
+    60% {    
+      color: blue;
+    }
+    
+    70% {
+        color: #f1c40f;        
+    }
+    80% {
+        color: #2980b9;      
+    }
+    
+    90% { 
+        color: #fd6906;
+    }
+    
+    100% {   
+      color: rgb(107, 35, 47);
+    }
+  }
+
+
+
+
+
+/* ========================== */
+
+.createbatche{
+    margin-top: 22vh;
+}
+.createbatches{
+  margin-top: 6vh;
+}
+.content-3{
+    padding: 35px 30px;
+    }
+    .content-3 img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px; 
+    }
+    .content-3 p{
+        font-size: 40px;
+        font-weight: 700;
+           -webkit-animation:color 25s infinite alternate;
+    }   
+
+    @-webkit-keyframes color {
+        0% {    
+          color: blue;
+        }
+        
+        20% { 
+            color: #fd6906;  
+        }
+        
+        35% {   
+          color: #1abc9c;
+        }
+        
+        44% {   
+            color: #9a07d8;
+          }
+        
+        60% {  
+            color: red;
+          }
+        
+        80% {    
+          color: #0481fd;
+        }
+        
+        100% {   
+            color: #9a07d8;
+          }
+    }
+    
+    .content-3 a{
+        font-weight: 600;
+        font-size: 19px;
+        text-decoration: solid underline rgb(137, 124, 124) 2px;
+        color: black;
+    }
+
+
+    .liveclasses{
+        margin-top: 4vh;
+    }
+    .take-attendence{
+        -webkit-animation:colorchange 25s infinite alternate !important;
+    }
+
+
+.payment-btn{
+  margin-top: 10px;
+   background-color: black;
+   border: none; 
+   border-radius: 4px;
+   margin-right: 10px;
+   height: 45px;
+   width: 150px;
+}
+.payment-btn a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.payment-btn:hover{
+  box-shadow: 8px 10px rgb(238, 238, 238);
+}
+
+
+
+
+
+
+
+
+
+
+

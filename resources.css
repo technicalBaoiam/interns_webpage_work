@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    background-color: white;
+    
+}
+.active a{
+    font-weight:600;
+    font-size: 20px;
+}
+.active a:hover{
+    background-color: antiquewhite;
+    border-radius: 8px;
+}
+
+.nav-item a span{
+    font-size: 12px;
+     color: white;
+     border-radius: 9px;
+     padding:0 8px;
+}
+.active a span{
+    background-color: orange;
+}
+
+.sign{
+    background-color: rgb(163, 29, 163);
+    border-radius: 7px;
+    margin-left: 5px;
+}
+.sign:hover{
+    background-color: black;
+}
+
+
+.first-content{
+    margin-left: ovw;
+    margin-right: ovw;
+    width: 97.7vw;
+    height: 60vh;
+    margin-top: 14vh;
+    background-color: rgb(239, 136, 239);
+}
+
+
+
+
+@media only screen and (max-width:992px)
+{
+    .first-content{
+        height: 64vh;
+    }
+    .Spread{
+        margin-top: 10vh;
+        color: black !important;
+    }
+
+    .second-content{
+        margin-top: 45vh!important;
+    }
+    .presentation a button{
+        width: 40vw !important;
+    }
+    .card{
+        margin-top: 5vh!important;
+    }
+    .card img{
+        width: 40vw !important;
+    }
+
+
+
+    .left-color{
+        width: 80%!important;
+        height: 50vh!important;
+        margin-bottom: 5vh;
+    }
+    
+    .twitter i{
+        margin-top: 2vh!important;
+    }
+    .twitter p{
+        font-weight: 600!important;
+        font-size: 24px!important;
+        color: black;
+    }
+    .text{
+        margin-top:4vh!important;
+    }
+    .text img{
+        width: 24vw !important;
+        height: 30vh!important;
+    }
+
+
+
+
+    .right-color{
+        margin-top: 5vh;
+        width: 80% !important;
+        height: 50vh!important;
+    }
+    .medium img{
+        margin-top: 2vh!important;
+    }
+    .medium p{
+        font-weight: 600!important;
+        font-size: 24px!important;
+    }
+
+    
+}
+
+@media only screen and (max-width:767px)
+{
+    .card{
+        margin-top: 5vh!important;
+    }
+    .card img{
+        width: 66vw !important;
+    }
+    .help-center-btn{
+        width: 20vw !important;
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-width:652px)
+{
+    .card{
+        width: 70vw;
+        margin-top: 5vh!important;
+    }
+    .card img{
+        width: 66vw !important;
+    }
+    .help-center-btn{
+        width: 25vw !important;
+        margin-top: 3vh;
+    }
+    .p span{
+        font-size: 34px !important;
+    }
+}
+
+@media only screen and (max-width:465px)
+{
+    /* .card{
+        width: 70vw;
+        margin-left: 10vw;
+        margin-top: 5vh!important;
+    } */
+
+    .help-center-btn{
+        width: 34vw !important;
+        margin-top: 0vh!important;
+    }
+
+    .Spread{
+        margin-top: 5vh !important;
+    }
+
+    .second-content{
+        margin-top: 53vh!important;
+    }
+    .presentation a button{
+        width: 80vw !important;
+    }
+}
+
+
+
+
+
+
+
+
+.image img{
+    padding-top: 5vh;
+    width: 80%;
+    height: 65vh;
+}
+.Spread{
+    margin-top: 10vh;
+}
+.presentation a button{
+    margin-top: 4vh;
+    width: 20vw;
+    height: 10vh;
+    font-size: 25px;
+    font-weight: 600;
+    background: rgb(53, 248, 157);
+    border: hidden;
+    border-radius: 6px;
+}
+.presentation button:hover{
+   background-color: rgb(0, 255, 132);
+}
+
+.second-content{
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+.second-content span{
+    font-size: 50px;
+    font-weight: 700; 
+}
+.p{
+    margin-bottom: 9vh;
+}
+.card{
+   border-radius: 18px;
+   height: 56vh;
+}
+.card img{
+    padding-top: 2vh;
+    padding-left:17px;
+    width: 25vw;
+    height: 25vh;
+}
+.help-center-btn{
+    background-color: rgb(240, 243, 243);
+    width: 12vw;
+    height: 6vh;
+    border: hidden;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.help-center-btn:hover{
+    background-color: rgb(218, 217, 215);
+}
+
+.left-color{
+    width: 80%;
+    height: 50vh;
+    background-color: aqua;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 15px;
+}
+.twitter i{
+    margin-top: 15vh;
+    align-items: center;
+    font-size: 60px;
+}
+.twitter p{
+    margin-left:1vw;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+}
+.text{
+    margin-top: 10vh;
+}
+.text img{
+    width: 14vw;
+    height: 40vh;
+}
+.left-color:hover{
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+.right-color{
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(31, 28, 205);
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 15px;
+}
+.right-color:hover{
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+
+
+.medium img{
+    margin-top: 15vh;
+    align-items: center;
+    font-size: 60px;
+}
+.medium p{
+    margin-left:1vw;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+

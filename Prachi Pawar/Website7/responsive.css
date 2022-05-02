@@ -1,0 +1,279 @@
+@media screen and (max-width:1100px) {
+    label #bar-btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    ul.links {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: #2c2a2a;
+        top: 120px;
+        right: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+    }
+
+    ul.links li {
+        display: block;
+        line-height: 26px;
+        width: fit-content;
+        margin: 30px auto;
+    }
+
+    ul.links li a {
+        color: #fff;
+    }
+
+    .nav-links ul .nav-li:hover {
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(130, 60, 13, 0.46);
+
+    }
+
+    .nav-btn:hover {
+        border: none;
+        box-shadow: 0px 0px 6px 0px rgba(28, 0, 0, 0.46);
+        background-color: #ee6024;
+    }
+
+
+
+    #check:checked~ul.links {
+        right: 0;
+    }
+
+    #check:checked~#bar-btn {
+        display: none;
+    }
+
+    #check:checked~#cancel {
+        display: block;
+    }
+
+    .hrp-img img {
+        width: 520px;
+    }
+
+    .home-lp {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    ul.links {
+        position: fixed;
+        width: 100%;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+
+/* -home--- */
+@media screen and (max-width:890px) {
+
+    .home-hm {
+        flex-direction: column;
+    }
+
+    .home-lp {
+        text-align: center;
+        width: auto;
+        margin: 60px 30px;
+        padding: 20px 30px;
+    }
+
+    .home-lp h1 {
+        text-align: center;
+    }
+
+    .home-lp .h-btn {
+        margin: 20px auto;
+    }
+}
+
+/* --testimonial */
+@media screen and (max-width:1200px) {
+    .card-container {
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .Our-Offerings p {
+        padding: 0 100px 20px;
+    }
+
+    .get-started img {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .title-div {
+        margin-left: 0px;
+    }
+
+    .partners h1 {
+        padding: 0 50px;
+    }
+    .get-started {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    .card-item {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .card-container {
+        display: block;
+    }
+
+    .partners h1 {
+        padding: 0 20px;
+    }
+}
+
+/* ===device-responsive== */
+@media screen and (max-width:1250px) {
+    .device-avail {
+        flex-direction: column;
+    }
+
+    .device-header {
+        margin-right: 0px;
+        padding: 0 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* drop content */
+    .hover-and-show{
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .offer-container{
+        margin: 0 30px;
+      }
+}
+
+    @media screen and (max-width:710px) {
+        .devices-container {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .device-item {
+            margin-bottom: 20px;
+        }
+        .device-header {
+            padding: 0 20px;
+        }
+        .Our-Offerings p {
+            padding: 0 30px 20px;
+        }
+    }
+
+    @media screen and (max-width:1075px){
+        .qinfo-container {
+            flex-direction: column;
+        }
+        .qinfo-content {
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    @media screen and (max-width:1315px){
+        .our-courses {
+           flex-wrap: wrap;
+        }
+
+    }
+    @media screen and (max-width:550px){
+        .get-started img {
+            width: 280px;
+        }
+
+    }
+
+    @media screen and (max-width:450px){
+        nav{
+            padding: 10px 65px;
+        }
+        nav img {
+            width: 127px;
+        }
+        .home-lp {
+            padding: 20px 2px;
+            margin-bottom: 30px;
+        }
+        .hrp-img img{
+            width: 400px;
+        }
+        .card-item {
+            width: 80%;
+        }
+        .partners h1 {
+            padding:0px;
+        }
+        .device-header {
+            padding: 0 3px;
+        }
+        .content-img img {
+            width: 260px;
+            height: 260px;
+        }
+        .offer-col {
+            padding: 67px 18px;
+        }
+        .lp-info h2 {
+            font-size: 21px;
+        }
+        .lp-info ul {
+            line-height: 23px;
+        }
+        .try-b {
+            padding: 10px 20px;
+        }
+        .qinfo-content {
+            flex-direction: column;
+            width: 240px;
+        }
+        .qinfo-content img {
+            padding: 0px;
+            margin-right: 0px;
+            width: 170px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .qinfo-content .qinfo-header .q-btn {
+            width: 182px;
+        }
+        .course-item {
+            width: 278px;
+        }
+        .get-started {
+            width: 80%;
+        }
+        ul.links {
+            text-align: left;
+        }
+        ul.links li {
+            margin-left: 30px;
+        }
+    }
+
+

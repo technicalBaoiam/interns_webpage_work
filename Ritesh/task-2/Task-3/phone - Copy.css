@@ -1,0 +1,391 @@
+ @media screen and (max-width:900px) {
+ 
+            @media screen and (max-width:600px)  { 
+            .it2 img{ 
+                display:none;
+            }
+            }
+ 
+
+            #fhead{ 
+                height:257px ;
+            }
+     #fhead  h2{ 
+            font-size:1.1rem ;  
+            margin-bottom: 21px;    
+         }
+
+         .b button { 
+             font-size: .6rem; 
+             padding: 3px 6px; 
+        
+         }
+
+         .box { 
+            padding: 3px 10px; 
+            margin: -13px 10px;
+         } 
+
+         .it1 h3{  
+             font-size: .9rem; 
+             margin-bottom: 0px;
+
+         } 
+         .it1 h2{ 
+            font-size: 1.08rem; 
+            margin-bottom: 0px;
+         } 
+         .bo{ 
+             font-size: .6rem; 
+             margin-bottom: 0px;
+         } 
+         .btt button{ 
+            padding: 3px 5px; 
+            font-size: .5rem;
+         }
+            .it2 img{ 
+                height: 80px; 
+                width: 100px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+            .fa-solid {
+                font-size: .75rem;
+            }
+
+            .navbar ul {
+                padding: 0px 0px;
+            }
+
+            .navbar ul li a {
+                font-size: .6rem;
+                margin: 0px 4px;
+            }
+            header div img{ 
+                width: 48px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+        
+
+            /* headings */
+
+            #home {
+                flex-direction: column;
+            }
+
+            .logo {
+                margin: 0px 47px;
+                margin-top: 18px;
+
+            }
+
+            .logo img {
+                width: 64px;
+                height: 43px;
+
+            }
+
+            .head h1 {
+                width: 80%;
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 6px;
+                margin-top: 15px;
+
+            }
+
+            .head-3 {
+                width: 250px;
+            }
+
+            .head-1 h2 {
+                margin-bottom: -13px;
+                font-size: .9rem;
+                width: 56%;
+                text-align: center;
+            }
+
+            .head-2 h3 {
+                margin-bottom: -10px;
+                font-size: .85rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .head-3 h2 {
+                font-size: 1rem;
+                padding: 12px 6px;
+            }
+
+            .col h3 {
+                font-size: .9rem;
+                padding: 0px 18px;
+            }
+
+            .col h4 {
+                font-size: .9rem;
+                padding: 0px 9px;
+            }
+
+            /* forms */
+
+            #forms .btn {
+                position: absolute;
+               display: none;
+                top: 54px;
+                font-size: 1rem;
+                right: 44px;
+
+            }
+
+            #forms {
+
+                width: 337px;
+                margin: auto;
+            }
+
+            .registration {
+                width: 76%;
+                margin: auto;
+                margin-top: 28px;
+            }
+
+
+            .reg {
+                margin: 9px 16px;
+                font-size: .9rem;
+            }
+
+            #name {
+                padding: 4px 2px;
+            }
+
+            #email {
+                padding: 4px 2px;
+            }
+
+            #number {
+                padding: 4px 2px;
+            }
+
+
+
+            .registration h2 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            form {
+                font-size: .8rem;
+            }
+
+            #gen {
+                margin: 7px 3px;
+            }
+
+
+            /* syllabus */
+
+            #syllabus h1 {
+                font-size: 1.4rem;
+            }
+
+            .items {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                width: 92%;
+                margin: auto;
+                margin-bottom: 34px;
+            }
+
+
+
+
+            /* ABOUT */
+            #about {
+                MARGIN-TOP: -85px;
+                width: 90%;
+                flex-direction: column;
+            }
+            
+            .why1 h3 {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .why1 p {
+                margin-top: -18px;
+                width: 90%;
+                font-size: 0.75rem;
+                /* text-align: center; */
+                display: none;
+            }
+
+            .why2 {
+                font-size: .6rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: auto;
+
+            }
+
+            .part1 {
+                display: flex;
+                margin: auto;
+            }
+
+            .why2 div p {
+                font-size: .6rem;
+            }
+
+            .l {
+                font-size: 1.1rem;
+            }
+
+            .ll {
+                margin: 10px 12px;
+                width: 27%;
+                text-align: center;
+            }
+
+            .part2 {
+                display: flex;
+                margin: auto;
+            }
+
+
+
+
+            /* scholar */
+            #scholar {
+                margin-top: 49px;
+            }
+
+            .sc h2 {
+
+                font-size: 1.1rem;
+
+            }
+
+
+            .scc .log {
+                margin: 26px 15px;
+                font-size: 2rem;
+                margin-bottom: 5px;
+            }
+
+            .scc div {
+                font-size: .5rem;
+                margin: 0px 4px;
+            }
+
+
+
+
+
+            /* learining */
+            #learning {
+                margin-top: 46px;
+                width: 100%;
+                border-radius: 0px;
+                padding: 8px 12px;
+            }
+
+            #learning .l-1 h2 {
+                font-size: 1rem;
+                margin-bottom: 8px;
+                color: white;
+            }
+
+            .l-1 p {
+                font-size: .9rem;
+            }
+
+            .l-2 img {
+                /* margin-left: 5vw; */
+                width: 61px;
+                height: 73px;
+            }
+
+
+            /* questions */
+            #questions {
+                flex-direction: column;
+                margin-bottom: 40px;
+
+            }
+
+            #questions div h2 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .first {
+                width: 100%;
+            }
+
+            .ques {
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+
+            .ans {
+                font-size: .7rem;
+            }
+
+            /* footer */
+            #foot {
+                height: 80%;
+            }
+
+            #foot h4 {
+                font-size: 0.8rem;
+            }
+
+            #foot p {
+                font-size: .5rem;
+            }
+
+            .foot1 {
+                margin-left: 34px;
+
+            }
+
+            .foots p a img {
+                height: 21px;
+                width: 26px;
+            }
+
+            .reser {
+                font-size: .5rem;
+            }
+
+            .foots {
+                margin: 33px 10px;
+            }
+
+            #foot h4 {
+                font-size: .7rem;
+            }
+
+            .fa {
+                font-size: 13px;
+
+
+            }
+        }

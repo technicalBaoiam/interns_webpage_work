@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baoiam Website</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style type="text/css">
+        .navbar-brand,
+        .navbar-brand>img {
+            width: 10rem;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <a href="#"><img src="logo.png" alt="logo img"></a>
+
+            <div class="nav-links">
+
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="bar-btn"></i>
+                    <i class="fas fa-times" id="cancel"></i>
+                </label>
+
+                <ul class="links">
+                    <li class="nav-li"><a href="#">Home</a></li>
+                    <li class="nav-li"><a href="#">Products</a></li>
+                    <li class="nav-btn"><a href="#" class="btn">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-section">
+            <div class="home-wi">
+                <div class="home-wi-img1">
+                    <img src="https://cdn3.iconfinder.com/data/icons/women-10/1000/Developer_output-256.png"
+                        alt="home-img">
+                </div>
+
+                <div class="home-heading">
+                    <h1>Building the future,</h1>
+                    <h1>One classroom at a time</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit inventore mollitia sunt sit sequi
+                        similique optio totam aut saepe nihil.</p>
+
+                    <div class="home-btn">Learn More</div>
+                </div>
+                <div class="home-wi-img2"><img
+                        src="https://cdn3.iconfinder.com/data/icons/scenes-22/1000/design___man_webpage_graphic_design_layout_browser_website-256.png"
+                        alt="home-img"></div>
+
+            </div>
+        
+        <div class="about-us">
+            <div class="about-intro">
+            <h1>About Us</h1>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem iste vitae? Quam ullam assumenda cupiditate.</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam labore laudantium ab earum, sit ratione nostrum illo quam quaerat. Aspernatur, quos! Quaerat consequuntur dolor natus impedit sed culpa reprehenderit aut.</p>
+
+        </div>
+            <div class="about-img">
+                <img src="https://ouch-cdn2.icons8.com/9YQaCW_0xwQsy2G9fzv2QgWoHDRaAYvW235Oc-q9cKE/rs:fit:256:192/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTEx/L2JlYWZkOWViLTNm/YTEtNDJhMC05MGI0/LTVlYzdjMDY3Zjky/Yi5zdmc.png" alt="img">
+            </div>
+        </div>
+        </section>
+
+
+        <section class="job-position">
+            <div class="search-bar-div">
+                <h1>Position we offer</h1>
+                <div class="search-inp-fields">
+                    <select name="department" id="department">
+                        <option selected class="selected">Choose Department</option>
+                        <option value="dep-bu">Business</option>
+                        <option value="dep-eg"><a href="engg-id">Engineering</a> </option>
+                        <option value="dep-op">Operations</option>
+                        <option value="dep-sa">Sales</option>
+                        <option value="dep-pd">Product</option>
+                    </select>
+
+                    <select name="work-type" id="work-type">
+                        <option selected class="selected">Choose Work Type</option>
+                        <option value="wt-c">Contract</option>
+                        <option value="wt-ft">Full Time</option>
+                        <option value="wt-is">Internship</option>
+                    </select>
+
+                    <select name="location" class="inp-name" id="location">
+                        <option selected class="selected">Choose Location</option>
+                        <option value="loc">Mumbai, India</option>
+                        <option value="loc">Bengaluru, India</option>
+                        <option value="loc">Delhi, India</option>
+                    </select>
+
+                    <div class="switch-div">
+                        <h3> Remote Only</h3>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <!-- <input type="text" class="search-job" placeholder="Search Job Title">
+                <i class="icon-search"></i> -->
+
+                    <div class="search-div">
+                        <div class="search-job">
+                            <input type="text" class="search-title" placeholder="Search Job Title">
+                            <button type="submit" class="search-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="courses-lists">
+          
+                <div class="course-item carousel" id="engg-id">
+                    <h2>Engineering</h2>
+                    <h5>15 Open Roles</h5>
+
+                    <div class="pre-btn"><img src="arrow.png" alt="arrow"></div>
+                    <div class="nxt-btn"><img src="arrow.png" alt="arrow"></div>
+        
+
+                    <div class="row-div">
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/backend-757667.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Backend Architect</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-engineering-1-910688.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Data Engineer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/it-engineer-5388481-4517908.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Devops Engineer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/fullstack-developer-1176979.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Fullstack Developer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/machine-learning-30-988205.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Machine Learning Engineer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/software-developer-3230730-2691324.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Software Developer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/code-quality-5346308-4471552.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>QA Engineer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item carousel" id="prod-id">
+                    <h2>Product</h2>
+                    <h5>15 Open Roles</h5>
+
+                    <div class="pre-btn"><img src="arrow.png" alt="arrow"></div>
+                    <div class="nxt-btn"><img src="arrow.png" alt="arrow"></div>
+
+                    <div class="row-div">
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/backend-757667.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Lead Product Designer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-engineering-1-910688.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Lead Product Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/it-engineer-5388481-4517908.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Product Analyst</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/fullstack-developer-1176979.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Product Operations Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/machine-learning-30-988205.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Senior Product Analyst</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/software-developer-3230730-2691324.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Software Developer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/code-quality-5346308-4471552.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>UX Writer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item carousel" id="Bu-id">
+                    <h2>Business</h2>
+                    <h5>12 Open Roles</h5>
+
+                    <div class="pre-btn"><img src="arrow.png" alt="arrow"></div>
+                    <div class="nxt-btn"><img src="arrow.png" alt="arrow"></div>
+
+                    <div class="row-div">
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/backend-757667.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Assistant Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-engineering-1-910688.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Business Analyst</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/it-engineer-5388481-4517908.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Central Sales Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/fullstack-developer-1176979.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Executive Assistant</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/machine-learning-30-988205.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>International Sales Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/software-developer-3230730-2691324.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Lead - Transformation</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/code-quality-5346308-4471552.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Strategy and Ops Associate</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item carousel" id="Oper-id">
+                    <h2>Operations</h2>
+                    <h5>10 Open Roles</h5>
+                    <div class="pre-btn"><img src="arrow.png" alt="arrow"></div>
+                    <div class="nxt-btn"><img src="arrow.png" alt="arrow"></div>
+
+                    <div class="row-div">
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/backend-757667.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Manager-Customer Growth</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-engineering-1-910688.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Chat Support Executive</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/it-engineer-5388481-4517908.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Customer Success Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/fullstack-developer-1176979.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Key Account Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/machine-learning-30-988205.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>MIS specialist</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/software-developer-3230730-2691324.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Lead-cutomer Success</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                        <div class="course-col">
+                            <div class="img-div">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/code-quality-5346308-4471552.png"
+                                    alt="img">
+                                <h5>Bengaluru <span>Full Time</span> </h5>
+                            </div>
+                            <hr>
+                            <div class="course-info">
+                                <h3>Sales Operations Manager</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste ipsa error quos
+                                    dolore
+                                    labore optio deserunt laborum? Fugiat, quod!</p>
+
+                                <div class="home-btn course-btn"><a href="#">Learn More</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark footer5 text-white">
+        <div class="container">
+            <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0 addr-contact">
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column"
+                            style="padding-right: 60px; margin-left: -60px;">
+                            <li class="nav-item">
+                                <a class="nav-link media" href="#">
+                                    <span class="media">
+                                        <div style="padding-top: 10px;"></div>
+                                        <span class="fas fa-location-arrow mt-1 mr-2"
+                                            style="margin-bottom: -10px;"></span>
+                                        <span class="media-body">
+                                            <h5 class="text-white" style="font-size: 21px; margin-top: -10px;">Address
+                                            </h5>
+                                            <p style="padding-top: 10px;">
+                                                28°37'44.9"N 77°22'48.4"E
+                                                H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301</p>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link media" href="tel:+91-9310143463">
+                                    <span class="media">
+                                        <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                                        <span class="media-body">
+                                            <h5 class="text-white" style="font-size: 21px;">Talk With Us</h5>
+                                            +91 1234567890
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+                        <h5 class="text-white" style="font-size: 21px;">Company</h5>
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BAOIAM Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Child saftey</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Why BAOIAM</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Our results</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Help India lean</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+                        <h5 class="text-white" style="font-size: 21px;">Other Links</h5>
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">Free live classes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Why teach with BAOIAM</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Try WAVE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Try Whiteboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BAAOIAM improvement promise</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">VOLT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Macro courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Maharastra Board</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Engineering Blog</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="col-6 col-md-4 col-lg">
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column"
+                            style="padding-left: 100px; margin-right: -70px;">
+                            <h5 class="text-white" style="font-size: 21px;">Social Media Links</h5>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/"><i
+                                        class="fab fa-facebook fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1"><i
+                                        class="fab fa-twitter fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://instagram.com/beaoneinamillion?utm_medium=copy_link"><i
+                                        class="fab fa-instagram fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd"><i
+                                        class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img class="footer_image"
+                                        src="img/google-play-badge.png"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><button class="btn55">Ask to
+                                        Expert</button></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="opacity-xs my-0" style="margin-left: -60px; margin-right: -60px;">
+
+            <div class="space-1" style="padding-left: 24%; padding-right: 20%; ">
+                <div class="row align-items-md-center">
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0">
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                </div>
+
+                <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;">&copy; 2022 All
+                    Rights Reserved-BOAIAM</p>
+                <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;
+                    Privacy Policy</p>
+                <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp; Terms
+                    and conditions</p>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- js for job-cards -->
+    <script>
+        const cardContainer = [...document.querySelectorAll('.row-div')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+        cardContainer.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            nxtBtn[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth / 2;
+            })
+
+            preBtn[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth / 2;
+            })
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

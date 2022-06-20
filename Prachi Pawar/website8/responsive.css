@@ -1,0 +1,145 @@
+@media screen and (max-width: 756px) {
+    label #bar-btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    ul.links {
+        /* position: fixed; */
+        position: absolute;
+        width: 60%;
+        height: 100vh;
+        background-color: #292626;
+        color: #fff;
+        top: 130px;
+        top: 116px;
+        right: -180%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+    }
+
+    ul.links li {
+        display: block;
+        margin: 30px 0;
+        line-height: 26px;
+        margin: 30px auto;
+        width: 250px;
+    }
+
+    nav ul li:hover {
+        background-color: none !important;
+    }
+
+    ul.links li a {
+        color: #fff;
+    }
+
+    #check:checked~ul.links {
+        right: 0;
+    }
+
+    #check:checked~#bar-btn {
+        display: none;
+    }
+
+    #check:checked~#cancel {
+        display: block;
+    }
+}
+
+/* home */
+@media screen and (max-width: 1188px) {
+    .home-heading p {
+        font-size: 15px;
+        padding: 20px 10px;
+    }
+
+    .home-heading {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+
+
+    .home-wi {
+        flex-direction: column;
+    }
+
+    .home-heading {
+        margin: auto 10px;
+    }
+
+    .home-wi-img1 {
+        display: none;
+    }
+
+    .home-wi  .home-wi-img2 { 
+        margin: auto;
+        margin-top:50px;
+    }
+    .about-us {
+        width: 80%;
+    }
+    .about-intro {
+        padding: 0 10px;
+        margin-right: 10px;
+    }
+
+    .courses-lists {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-us{
+        flex-direction: column;
+    }
+   
+}
+
+/* positions */
+@media screen and (max-width: 655px){
+    .search-inp-fields{
+        flex-direction: column;
+    }
+
+    .switch-div{
+        flex: 0 0 50px;
+    }
+    .search-div {
+        width: 75%;
+    }
+    .home-wi img {
+        width: 260px;
+    }
+}
+
+
+@media screen and (max-width: 530px){
+    nav {
+        padding: 10px 37px;
+    }
+    ul.links {
+        width: 100%;
+    }
+    .pre-btn {
+        left: -15px;
+    }
+    .nxt-btn {
+        right: -15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .course-col {
+        width: 250px;
+        padding: 20px 10px 10px;
+    }
+    .img-div span {
+        margin-left: 50px;
+    }
+    .img-div img {
+        width: 90px;
+    }
+}
